@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>轮播</title>
+<link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="http://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.test1{
+    width: 400px;
+    margin: 100px auto;
+}
+.test2{
+    position: absolute;
+    top: 280px;
+    text-align: center;
+}
+.test2 li{
+    width: 30px;
+    height: 5px;
+    border: 1px solid transparent;
+    background-color: #717171;
+    border-radius: 2px;
+    
+}
+.test2 .active{
+    width: 30px;
+    height: 5px;
+    border: 1px solid transparent;
+    background-color:#fff;
+    border-radius: 2px;
+
+}
+body{
+    background-color: white;
+}
+</style>
+</head>
+<body>	
+	<div id="carousel-of-product" class="carousel slide test1" data-ride="carousel" data-interval=3000>
+        <!--轮播指标-->
+        <ol class="carousel-indicators test2">
+            <li data-target="#carousel-of-product" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-of-product" data-slide-to="1" ></li>
+            <li data-target="#carousel-of-product" data-slide-to="2" ></li>
+            <li data-target="#carousel-of-product" data-slide-to="3" ></li>
+            <li data-target="#carousel-of-product" data-slide-to="4" ></li>
+        </ol>
+        <!--轮播项目-->
+        <div class="carousel-inner test1" role="listbox">
+            <div class="item active">
+                <iframe src="./05.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div class="item">
+                <iframe src="./05.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div class="item">
+                <iframe src="./05.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div class="item">
+                <iframe src="./05.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div class="item">
+                <iframe src="./05.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+        </div>		
+    </div>
+</body>
+</html>
+
