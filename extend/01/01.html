@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>前5标签</title>
+<title>上月贡献度</title>
 <script src="../js/chart.js"></script>
 </head>
 <body>
@@ -11,43 +11,31 @@
 <script>
 const ctx = document.getElementById('myChart');
 const data = {
-  labels: [
-    'MySQL',
-    'Design Pattern',
-    'Python',
-    'Java',
-    'Spring Boot'
-  ],
   datasets: [{
-    label: '环形图实例',
-    data: [113, 80, 59, 56, 55],
-    backgroundColor: [
-      'rgb(255, 99, 132)',
-      'rgb(54, 162, 235)',
-      'rgb(255, 205, 86)',
-      'rgb(0,255,255)',
-      'rgb(0,255,0)'
-    ],
-    hoverOffset: 4
-  }]
+    label: '散点图实例',
+    data: [{x: 1, y: 2}, {x: 2, y: 2}, {x: 3, y: 4}, {x: 4, y: 3}, {x: 5, y: 4}, {x: 6, y: 4}, {x: 7, y: 2},{x: 8, y: 0}, {x: 9, y: 1}, {x: 10, y: 0}, 
+           {x: 11, y: 0}, {x: 12, y: 4}, {x: 13, y: 7}, {x: 14, y: 3}, {x: 15, y: 0}, {x: 16, y: 0}, {x: 17, y: 0}, {x: 18, y: 9}, {x: 19, y: 7}, {x: 20, y: 4}, 
+           {x: 21, y: 4},{x: 22, y: 0}, {x: 23, y: 0}, {x: 24, y: 0}, {x: 25, y: 3}, {x: 26, y: 2}, {x: 27, y: 5}, {x: 28, y: 10}, {x: 29, y: 5}, {x: 30, y: 5}, 
+           {x: 31, y: 1}],
+    backgroundColor: 'rgb(255, 99, 132)'
+  }],
 };
 const config = {
-  type: 'doughnut',
+  type: 'scatter',
   data: data,
   options: {
     responsive: false, // 设置图表为响应式，根据屏幕窗口变化而变化
     maintainAspectRatio: false,// 保持图表原有比例
     scales: {
-      yAxes: [{
-        ticks: {
-          beginAtZero:true
-		}
-	  }]
+      x: {
+        type: 'linear',
+        position: 'bottom'
+      }
     },
     plugins: {
         title: {
             display: true,
-            text: '前5标签',
+            text: '上月贡献度',
             padding: {
                 top: 10,
                 bottom: 10

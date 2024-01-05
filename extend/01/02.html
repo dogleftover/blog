@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>分类</title>
+<title>去年贡献度</title>
 <script src="../js/chart.js"></script>
 </head>
 <body>
@@ -10,56 +10,57 @@
 <canvas id="myChart" width="400" height="280"></canvas>
 <script>
 const ctx = document.getElementById('myChart');
-const labels = ['前端', '后端', '分析与开发', '算法与设计', '数据库', '服务器', '权限安全',
-                '开发环境', '项目构建', '版本控制', '中间件', '错误总结', '工具类封装', '默认', '测试'];  // 设置 X 轴上对应的标签
+const labels = ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月'];  // 设置 X 轴上对应的标签
 const data = {
   labels: labels,
   datasets: [{
-    label: '贡献度',
-    data: [65, 464, 63, 156, 108, 41, 38, 62, 60, 12, 10, 35, 7, 10, 5],
-    backgroundColor: [      // 设置每个柱形图的背景颜色
-      'rgba(255, 99, 132, 0.2)',
-      'rgba(255, 159, 64, 0.2)',
-      'rgba(255, 205, 86, 0.2)',
-      'rgba(75, 192, 192, 0.2)',
-      'rgba(54, 162, 235, 0.2)',
-      'rgba(153, 102, 255, 0.2)',
-      'rgba(201, 203, 207, 0.2)'
-    ],
-    borderColor: [     //设置每个柱形图边框线条颜色
-      'rgb(255, 99, 132)',
-      'rgb(255, 159, 64)',
-      'rgb(255, 205, 86)',
-      'rgb(75, 192, 192)',
-      'rgb(54, 162, 235)',
-      'rgb(153, 102, 255)',
-      'rgb(201, 203, 207)'
-    ],
-    borderWidth: 1     // 设置线条宽度
+    label: '本月贡献度',
+    data: [0, 0, 0, 1, 0, 0, 0, 3, 18, 35, 33, 91],
+    fill: false,
+    borderColor: 'rgb(75, 192, 192)', // 设置线的颜色
+	backgroundColor: ['rgba(179, 0, 33, 0.5)'],// 设置点的填充色
+	pointStyle: 'circle',     //设置点类型为圆点
+    pointRadius: 6,    //设置圆点半径
+    pointHoverRadius: 10, //设置鼠标移动上去后圆点半径
+    tension: 0.1
   }]
 };
 const config = {
-  type: 'bar', // 设置图表类型
-  data: data,  // 设置数据集
+  type: 'line', // 设置图表类型
+  data: data,
   options: {
-    responsive: false, // 设置图表为响应式，根据屏幕窗口变化而变化
-    maintainAspectRatio: false,// 保持图表原有比例
-    scales: {
+    responsive: false,  // 设置图表为响应式
+
+    interaction: {  // 设置每个点的交互
+      intersect: false,
+    },
+    scales: {  // 设置 X 轴与 Y 轴
+      x: {
+        display: true,
+        title: {
+          display: true,
+          text: '日期'
+        }
+      },
       y: {
-        beginAtZero: true // 设置 y 轴从 0 开始
+        display: true,
+        title: {
+          display: true,
+          text: '贡献度'
+        }
       }
     },
     plugins: {
         title: {
             display: true,
-            text: '分类',
+            text: '去年贡献度',
             padding: {
                 top: 10,
                 bottom: 10
             }
         }
     }
-  },
+  }
 };
 const myChart = new Chart(ctx, config);
 </script>

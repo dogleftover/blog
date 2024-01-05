@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>上月贡献度</title>
+<title>分类</title>
 <script src="../js/chart.js"></script>
 </head>
 <body>
@@ -10,37 +10,56 @@
 <canvas id="myChart" width="400" height="280"></canvas>
 <script>
 const ctx = document.getElementById('myChart');
+const labels = ['前端', '后端', '分析与开发', '算法与设计', '数据库', '服务器', '中间件', '权限安全',
+                '开发环境', '项目构建', '版本控制', '错误总结', '工具脚本'];  // 设置 X 轴上对应的标签
 const data = {
+  labels: labels,
   datasets: [{
-    label: '散点图实例',
-    data: [{x: 1, y: 15}, {x: 5, y: 7}, {x: 10, y: 14}, {x: 15, y: 20},
-           {x: 20, y: 7}, {x: 25, y: 27}, {x: 31, y: 1}],
-    backgroundColor: 'rgb(255, 99, 132)'
-  }],
+    label: '贡献度',
+    data: [66, 466, 63, 156, 108, 41, 10, 38, 66, 60, 12, 35, 7],
+    backgroundColor: [      // 设置每个柱形图的背景颜色
+      'rgba(255, 99, 132, 0.2)',
+      'rgba(255, 159, 64, 0.2)',
+      'rgba(255, 205, 86, 0.2)',
+      'rgba(75, 192, 192, 0.2)',
+      'rgba(54, 162, 235, 0.2)',
+      'rgba(153, 102, 255, 0.2)',
+      'rgba(201, 203, 207, 0.2)'
+    ],
+    borderColor: [     //设置每个柱形图边框线条颜色
+      'rgb(255, 99, 132)',
+      'rgb(255, 159, 64)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)',
+      'rgb(54, 162, 235)',
+      'rgb(153, 102, 255)',
+      'rgb(201, 203, 207)'
+    ],
+    borderWidth: 1     // 设置线条宽度
+  }]
 };
 const config = {
-  type: 'scatter',
-  data: data,
+  type: 'bar', // 设置图表类型
+  data: data,  // 设置数据集
   options: {
     responsive: false, // 设置图表为响应式，根据屏幕窗口变化而变化
     maintainAspectRatio: false,// 保持图表原有比例
     scales: {
-      x: {
-        type: 'linear',
-        position: 'bottom'
+      y: {
+        beginAtZero: true // 设置 y 轴从 0 开始
       }
     },
     plugins: {
         title: {
             display: true,
-            text: '上月贡献度',
+            text: '分类',
             padding: {
                 top: 10,
                 bottom: 10
             }
         }
     }
-  }
+  },
 };
 const myChart = new Chart(ctx, config);
 </script>
