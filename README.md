@@ -20,7 +20,7 @@
 
 ### 扩展
 - [轮播图](https://dogleftover.github.io/blog-beautify/extend/01/bulletin_board.html)
-- [前5标签](https://dogleftover.github.io/blog-beautify/extend/01/01.html)
+- [新建标签占比](https://dogleftover.github.io/blog-beautify/extend/01/01.html)
 - [分类](https://dogleftover.github.io/blog-beautify/extend/01/02.html)
 - [上月贡献度](https://dogleftover.github.io/blog-beautify/extend/01/03.html)
 - [去年贡献度](https://dogleftover.github.io/blog-beautify/extend/01/04.html)

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+  <script type="text/javascript" src="../js/echarts.min.js"></script>
+ 
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+ 
+    myChart.showLoading();
+
+    const data = {
+    name: '分类',
+    children: [
+        {
+        name: '前端',
+        children: [
+            {
+            name: '渐进式',
+            children: [
+                { name: 'Vue.js', value: 22 }
+            ]
+            }
+        ]
+        },
+        {
+        name: '后端',
+        children: [
+            {
+            name: '面向对象',
+            children: [
+                { name: '编译型', children: [{ name: 'Kotlin', value: 1 }, { name: 'Java', value: 56 }]},
+                { name: '解释型', children: [{ name: 'Python', value: 70 }]},
+                { name: '函数式', children: [{ name: 'Scala', value: 3 }]}
+            ]
+            },
+            {
+            name: 'ORM',
+            children: [
+                { name: 'Mybatis', value: 7 }
+            ]
+            },
+            {
+            name: '微服务',
+            children: [
+                { name: 'Spring Cloud', children: [{ name: 'Eureka'}, { name: 'Zookeeper'}, { name: 'Consul'}, { name: 'Ribbon'}, { name: 'OpenFeign'}, { name: 'Hystrix'}, { name: 'GateWay'}, { name: 'Config'}, { name: 'Bus'}, { name: 'Stream'}, { name: 'Sleuth'}, { name: 'Nacos'}, { name: 'Sentinel'}, { name: 'Seata'}]},
+                { name: 'Kubernetes'}
+            ]
+            }
+        ]
+        },
+        {
+        name: '分析与开发', value: 103
+        },
+        {
+        name: '算法与设计', 
+        children: [
+            {
+            name: '数据结构与算法',
+            value: 63
+            },
+            {
+            name: '设计模式',
+            value: 80
+            },
+            {
+            name: '领域驱动设计',
+            value: 14
+            }
+        ]
+        },
+        {
+        name: '数据库',
+        children: [
+            {
+            name: '关系型',
+            children: [
+                { name: 'MySQL'},
+                { name: 'Oracle'},
+                { name: 'SQL Server'}
+            ]
+            },
+            {
+            name: '非关系型',
+            children: [
+                { name: '键/值', children: [{ name: 'Redis'}]},
+                { name: '文档', children: [{ name: 'MongoDB'}]},
+                { name: '搜索引擎', children: [{ name: 'Elasticsearch'}]}
+            ]
+            }
+        ]
+        },
+        {
+        name: '服务器', 
+        children: [
+            {
+            name: '运维', value: 9
+            }
+        ]
+        },
+        {
+        name: '中间件', 
+        children: [
+            {
+            name: 'web服务器',
+            children: [
+                { name: 'Nginx', value: 7 }
+            ]
+            },
+            {
+            name: '消息(队列|代理)',
+            children: [
+                { name: 'RabbitMQ', value: 2 }
+            ]
+            },
+            {
+            name: '缓存',
+            children: [
+                { name: 'Redis', value: 9 }
+            ]
+            },
+            {
+            name: '应用服务器',
+            children: [
+                { name: 'Tomcat', value: 2 }
+            ]
+            },
+        ]
+        },
+        {
+        name: '人工智能',
+        children: [
+            {
+            name: '机器学习',
+            children: [
+                { name: '神经网络', children: [{ name: '深度学习' }] }
+            ]
+            },
+            {
+            name: '图像处理'
+            },
+            {
+            name: '机器视觉'
+            }
+        ]
+        },
+        {
+        name: '权限安全',
+        children: [
+            {
+            name: 'Shiro', value: 11
+            },
+            {
+            name: 'Spring Security', value: 34
+            }
+        ]
+        },
+        {
+        name: '开发环境', value: 69
+        },
+        {
+        name: '项目构建',
+        children: [
+            {
+            name: 'Maven', value: 17
+            },
+            {
+            name: 'Gradle', value: 33
+            },
+            {
+            name: 'Vite', value: 11
+            }
+        ]
+        },
+        {
+        name: '版本控制', value: 12
+        },
+        {
+        name: '错误总结', value: 39
+        },
+        {
+        name: '封装/脚本', value: 7
+        }
+    ]
+    };
+
+    var data2 = {
+    name: 'Java全栈方向学习路线',
+    children: [
+        {
+        name: '前端',
+        children: [
+            {name: 'HTML',
+            children: [
+                { name: '链接' },{ name: '图像' },{ name: '表格' },{ name: '列表' },{ name: '区块' },{ name: '布局' },{ name: '表单' },{ name: 'iframe' },{ name: '颜色' }
+            ]
+            }, 
+            {name: 'CSS',
+            children: [
+                { name: '选择器' },{ name: '插入样式表' },{ name: '背景' },{ name: '字体' },{ name: '盒子模型' },{ name: '浮动' },{ name: '组合选择符' },{ name: '伪类' },{ name: '伪元素' },{ name: '过渡' },{ name: '动画' },{ name: '弹性盒子' },{ name: '多媒体查询' }
+            ]
+            }, 
+            {name: 'Sass'}, 
+            {name: 'Less'}, 
+            {name: 'JavaScript',
+            children: [
+                { name: '基础', children: [{ name: '变量' },{ name: '数据类型' },{ name: '函数' },{ name: '事件' },{ name: '字符串' },{ name: '运算符' },{ name: '流程语句' },{ name: 'DOM操作' },{ name: '正则表达式' }] },
+                { name: 'Ajax'},
+                { name: 'jQuery'},
+                { name: 'ES6', children: [{ name: '解构赋值' },{ name: '对象' },{ name: '数组' },{ name: '函数' },{ name: 'Class类' },{ name: '模块' },{ name: 'Promise对象' }] },
+                { name: 'TypeScript', children: [{ name: '变量声明' },{ name: '元组' },{ name: '枚举' },{ name: '类型别名' },{ name: '类' },{ name: '构造函数' },{ name: '继承' },{ name: '抽象类' },{ name: '接口' },{ name: '属性封装' },{ name: '泛型' },] },
+                { name: 'Node.js', children: [{ name: '回调函数' },{ name: 'Buffer' },{ name: 'Stream' },{ name: '模块系统' },{ name: '路由' },{ name: 'GET/POST请求' },{ name: 'Web模块' },{ name: 'Express框架' },{ name: 'RESTful API' },{ name: '连接MySQL' }] }
+            ]
+            }, 
+            {name: 'Vue.js',
+            children: [
+                { name: 'Vue3'},
+                { name: 'Vue Router'},
+                { name: 'Vuex'},
+                { name: 'Axios'},
+                { name: 'webpack'},
+                { name: 'Vite'},
+                { name: 'ECharts'},
+                { name: 'View UI'},
+                { name: 'Element Plus'},
+                { name: 'Vant'},
+                { name: 'uni-app'},
+                { name: 'Nuxt'}
+            ]
+            }
+        ]
+        },
+        {
+        name: '后端',
+        children: [
+            { name: '基础', 
+            children: [
+                { name: 'JavaSE'},
+                { name: 'java新特性'},
+                { name: 'JUC'},
+                { name: 'JVM'}
+            ]
+            },
+            { name: 'Web开发', 
+            children: [
+                { name: 'JavaWeb'}
+            ]
+            },
+            { name: '必备', 
+            children: [
+                { name: 'Netty'},
+                { name: 'Git'},
+                { name: 'Maven'},
+                { name: 'Gradle'}
+            ]
+            },
+            { name: '框架',
+            children: [
+                { name: 'Spring'},
+                { name: 'Spring MVC'},
+                { name: 'MyBatis'},
+                { name: 'MyBatis-Plus'},
+                { name: 'Spring Boot'},
+                { name: 'Spring Cloud',
+                children: [{ name: 'Eureka'}, { name: 'Zookeeper'}, { name: 'Consul'}, { name: 'Ribbon'}, { name: 'OpenFeign'}, { name: 'Hystrix'}, { name: 'GateWay'}, { name: 'Config'}, { name: 'Bus'}, { name: 'Stream'}, { name: 'Sleuth'}, { name: 'Nacos'}, { name: 'Sentinel'}, { name: 'Seata'}]
+                }
+            ]
+            },
+            { name: '权限认证', 
+            children: [
+                { name: 'Shiro'},
+                { name: 'Spring Security'}
+            ]
+            },
+            { name: '数据库', 
+            children: [
+                { name: 'MySQL'},
+                { name: 'Redis'}
+            ]
+            },
+            { name: '消息队列', 
+            children: [
+                { name: 'RabbitMQ'},
+                { name: 'MQTT'}
+            ]
+            },
+            { name: '沉淀', 
+            children: [
+                { name: '数据结构与算法'},
+                { name: '设计模式'},
+                { name: '领域驱动设计'},
+                { name: '简洁之道'}
+
+            ]
+            }
+        ]
+        },
+        {
+        name: '运维',
+        children: [{ name: 'Linux' },{ name: 'Docker' },{ name: 'Nginx' },{ name: 'Jenkins' }]
+        }
+    ]
+    };
+
+    myChart.hideLoading();
+    myChart.setOption(
+    (option = {
+        tooltip: {
+        trigger: 'item',
+        triggerOn: 'mousemove'
+        },
+        legend: {
+        top: '2%',
+        left: '3%',
+        orient: 'vertical',
+        data: [
+            {
+            name: '分类',
+            icon: 'rectangle'
+            },
+            {
+            name: 'Java',
+            icon: 'rectangle'
+            }
+        ],
+        borderColor: '#c23531'
+        },
+        series: [
+        {
+            type: 'tree',
+            name: '分类',
+            data: [data],
+            top: '5%',
+            left: '7%',
+            bottom: '2%',
+            right: '60%',
+            symbolSize: 7,
+            label: {
+            position: 'left',
+            verticalAlign: 'middle',
+            align: 'right'
+            },
+            leaves: {
+            label: {
+                position: 'right',
+                verticalAlign: 'middle',
+                align: 'left'
+            }
+            },
+            emphasis: {
+            focus: 'descendant'
+            },
+            expandAndCollapse: true,
+            animationDuration: 550,
+            animationDurationUpdate: 750
+        },
+        {
+            type: 'tree',
+            name: 'Java',
+            data: [data2],
+            top: '20%',
+            left: '60%',
+            bottom: '22%',
+            right: '18%',
+            symbolSize: 7,
+            label: {
+            position: 'left',
+            verticalAlign: 'middle',
+            align: 'right'
+            },
+            leaves: {
+            label: {
+                position: 'right',
+                verticalAlign: 'middle',
+                align: 'left'
+            }
+            },
+            expandAndCollapse: true,
+            emphasis: {
+            focus: 'descendant'
+            },
+            animationDuration: 550,
+            animationDurationUpdate: 750
+        }
+        ]
+    })
+    );
+ 
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+ 
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
