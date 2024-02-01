@@ -25,3 +25,4 @@
 - [上月贡献度](https://dogleftover.github.io/blog-beautify/extend/01/03.html)
 - [去年贡献度](https://dogleftover.github.io/blog-beautify/extend/01/04.html)
 - [往年贡献度](https://dogleftover.github.io/blog-beautify/extend/01/05.html)
+- [思维导图](https://dogleftover.github.io/blog-beautify/extend/02/mind_mapping.html)
