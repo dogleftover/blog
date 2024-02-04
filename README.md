@@ -27,3 +27,4 @@
 - [往年贡献度](https://dogleftover.github.io/blog-beautify/extend/01/05.html)
 - [思维导图](https://dogleftover.github.io/blog-beautify/extend/02/mind_mapping_1.html)
 - [日历热力图](https://dogleftover.github.io/blog-beautify/extend/03/calendar_heatmap.html)
+- [统计分析](https://dogleftover.github.io/blog-beautify/extend/01/statistical_analysis.html)
