@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>bulletin_board_1</title>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<script src="../js/jquery.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<style>
+.test1{
+    width: 400px;
+    height: 350px;
+    margin: 100px auto;
+    position: absolute;
+    top: -100px;
+    left: 0px;
+}
+.test2{
+    position: absolute;
+    top: 280px;
+    text-align: center;
+}
+.test2 li{
+    width: 30px;
+    height: 5px;
+    border: 1px solid transparent;
+    background-color: #717171;
+    border-radius: 2px;
+    
+}
+.test2 .active{
+    width: 30px;
+    height: 5px;
+    border: 1px solid transparent;
+    background-color:#fff;
+    border-radius: 2px;
+
+}
+body{
+    background-color: white;
+}
+</style>
+</head>
+<body>	
+	<div id="carousel-of-product" class="carousel slide test1" data-ride="carousel" data-interval=3000>
+        <!--轮播指标-->
+        <ol class="carousel-indicators test2">
+            <li data-target="#carousel-of-product" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-of-product" data-slide-to="1" ></li>
+            <li data-target="#carousel-of-product" data-slide-to="2" ></li>
+            <li data-target="#carousel-of-product" data-slide-to="3" ></li>
+            <li data-target="#carousel-of-product" data-slide-to="4" ></li>
+        </ol>
+        <!--轮播项目-->
+        <div class="carousel-inner test1" role="listbox">
+            <div class="item active">
+                <iframe src="./01.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div class="item">
+                <iframe src="./02.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div class="item">
+                <iframe src="./03.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div class="item">
+                <iframe src="./04.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div class="item">
+                <iframe src="./05.html" width="400" height="300" frameborder="0" scrolling="no" seamless></iframe>
+            </div>
+            <div>
+                <span>统计对象：<a href="https://www.cnblogs.com/dogleftover">博客园</a>，</span><span>数据最后统计时间：2024-01-01</span>
+            </div>
+        </div>		
+    </div>
+</body>
+</html>
+

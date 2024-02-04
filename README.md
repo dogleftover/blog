@@ -19,11 +19,11 @@
 - [关系型](https://dogleftover.github.io/blog-beautify/category/relational_databases.html)
 
 ### 扩展
-- [轮播图](https://dogleftover.github.io/blog-beautify/extend/01/bulletin_board.html)
+- [轮播图](https://dogleftover.github.io/blog-beautify/extend/01/bulletin_board_1.html)
 - [新建标签占比](https://dogleftover.github.io/blog-beautify/extend/01/01.html)
 - [分类](https://dogleftover.github.io/blog-beautify/extend/01/02.html)
 - [上月贡献度](https://dogleftover.github.io/blog-beautify/extend/01/03.html)
 - [去年贡献度](https://dogleftover.github.io/blog-beautify/extend/01/04.html)
 - [往年贡献度](https://dogleftover.github.io/blog-beautify/extend/01/05.html)
-- [思维导图](https://dogleftover.github.io/blog-beautify/extend/02/mind_mapping.html)
-- [思维导图](https://dogleftover.github.io/blog-beautify/extend/03/calendar_heatmap.html)
+- [思维导图](https://dogleftover.github.io/blog-beautify/extend/02/mind_mapping_1.html)
+- [日历热力图](https://dogleftover.github.io/blog-beautify/extend/03/calendar_heatmap.html)

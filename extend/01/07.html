@@ -1,15 +1,16 @@
 <!--
-	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=calendar-heatmap
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=calendar-graph
 -->
 <!DOCTYPE html>
 <html lang="en" style="height: 100%">
 <head>
   <meta charset="utf-8">
-  <title>2024年博客园贡献度热力图分布</title>
+  <title>2024-02贡献度</title>
 </head>
 <body style="height: 100%; margin: 0">
   <div id="container" style="height: 100%"></div>
 
+  
   <script type="text/javascript" src="../js/echarts.min.js"></script>
   <!-- Uncomment this line if you want to dataTool extension
   <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.4.3/files/dist/extension/dataTool.min.js"></script>
@@ -39,58 +40,93 @@
     
     var option;
 
-    function getVirtualData(year) {
-      const date = +echarts.time.parse(year + '-01-01');
-      const end = +echarts.time.parse(+year + 1 + '-01-01');
-      const dayTime = 3600 * 24 * 1000;
-      const data = [];
-      const data1 = [2,0,0,5,0,0,1,6,9,3,5,2,7,2,2,1,3,4,1,1,1,0,0,0,0,0,0,0,0,1,0];
-      for (let time = date; time < end; time += dayTime) {
-        // 取第一个数
-        let num = data1[0];
-        console.log(num)
-        // 删除第一个数
-        data1.shift();
-        console.log(data1);
-        // 填充
-        data.push([
-          echarts.time.format(time, '{yyyy}-{MM}-{dd}', false),
-          num
-        ]);
-      }
-      return data;
-    }
-option = {
-  title: {
-    top: 30,
-    left: 'center',
-    text: '2024年博客园贡献度热力图分布'
-  },
-  tooltip: {},
-  visualMap: {
-    min: 1,
-    max: 10,
-    type: 'piecewise',
-    orient: 'horizontal',
-    left: 'center',
-    top: 65
-  },
-  calendar: {
-    top: 120,
-    left: 30,
-    right: 30,
-    cellSize: ['auto', 13],
-    range: '2024',
-    itemStyle: {
-      borderWidth: 0.5
-    },
-    yearLabel: { show: false }
-  },
-  series: {
-    type: 'heatmap',
-    coordinateSystem: 'calendar',
-    data: getVirtualData('2024')
+    const graphData = [  // 数据
+      ['2024-02-05', 1]
+    ];
+const links = graphData.map(function (item, idx) {
+  return {
+    source: idx,
+    target: idx + 1
+  };
+});
+links.pop();
+function getVirtualData(year) {
+  const date = +echarts.time.parse(year + '-01-01');
+  const end = +echarts.time.parse(+year + 1 + '-01-01');
+  const dayTime = 3600 * 24 * 1000;
+  const data = [];
+  for (let time = date; time < end; time += dayTime) {
+    data.push([
+      echarts.time.format(time, '{yyyy}-{MM}-{dd}', false),
+      Math.floor(Math.random() * 1000)
+    ]);
   }
+  return data;
+}
+option = {
+  tooltip: {},
+  calendar: {
+    top: '6%',    // 位置
+    left: '5%',    // 位置
+    orient: 'vertical',
+    cellSize: 40,
+    yearLabel: {
+      margin: 50,
+      fontSize: 30
+    },
+    dayLabel: {
+      firstDay: 1,
+      nameMap: 'cn'
+    },
+    monthLabel: {
+      nameMap: 'cn',
+      margin: 15,
+      fontSize: 20,
+      color: '#999'
+    },
+    range: ['2024-02']  // 月份
+  },
+  visualMap: {
+    min: 0,   // 最小值
+    max: 10,    // 最大值
+    type: 'piecewise',
+    left: '3%',   // 位置
+    top: 260,   // 位置
+    inRange: {    // 渐变
+      color: ['#C7DBFF','#5291FF']
+    },
+    seriesIndex: [1],
+    orient: 'horizontal'
+  },
+  series: [
+    {
+      type: 'graph',
+      edgeSymbol: ['none', 'arrow'],
+      coordinateSystem: 'calendar',
+      links: links,
+      symbolSize: 15,
+      calendarIndex: 0,
+      itemStyle: {
+        color: 'yellow',
+        shadowBlur: 9,
+        shadowOffsetX: 1.5,
+        shadowOffsetY: 3,
+        shadowColor: '#555'
+      },
+      lineStyle: {
+        color: '#D10E00',
+        width: 1,
+        opacity: 1
+      },
+      data: graphData,
+      z: 20
+    },
+    {
+      type: 'heatmap',
+      coordinateSystem: 'calendar',
+      data: getVirtualData('2024')    // 年份
+    }
+  ]
 };
 
     if (option && typeof option === 'object') {
