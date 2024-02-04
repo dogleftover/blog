@@ -51,14 +51,22 @@ const links = graphData.map(function (item, idx) {
 });
 links.pop();
 function getVirtualData(year) {
-  const date = +echarts.time.parse(year + '-01-01');
+  const date = +echarts.time.parse(year + '-02-01');
   const end = +echarts.time.parse(+year + 1 + '-01-01');
   const dayTime = 3600 * 24 * 1000;
   const data = [];
+  const data1 = [0,0,0,0,1];
   for (let time = date; time < end; time += dayTime) {
+    // 取第一个数
+    let num = data1[0];
+    console.log(num)
+    // 删除第一个数
+    data1.shift();
+    console.log(data1);
+    // 填充
     data.push([
       echarts.time.format(time, '{yyyy}-{MM}-{dd}', false),
-      Math.floor(Math.random() * 1000)
+      num
     ]);
   }
   return data;
@@ -87,10 +95,11 @@ option = {
     range: ['2024-02']  // 月份
   },
   visualMap: {
-    min: 0,   // 最小值
+    min: 1,   // 最小值
     max: 10,    // 最大值
     type: 'piecewise',
-    left: '3%',   // 位置
+    splitNumber: 4,   // 区间
+    left: 'left',   // 位置
     top: 260,   // 位置
     inRange: {    // 渐变
       color: ['#C7DBFF','#5291FF']
