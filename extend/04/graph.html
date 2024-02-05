@@ -5,7 +5,7 @@
 <html lang="en" style="height: 100%">
 <head>
   <meta charset="utf-8">
-  <title>学习路线关系图</title>
+  <title>graph</title>
 </head>
 <body style="height: 100%; margin: 0">
   <div id="container" style="height: 100%"></div>
@@ -53,7 +53,7 @@ $.getJSON('les-miserables.json', function (graph) {
   });
   option = {
     title: {
-      text: 'Les Miserables',
+      text: '学习路线关系图',
       subtext: 'Default layout',
       top: 'bottom',
       left: 'right'
@@ -71,7 +71,7 @@ $.getJSON('les-miserables.json', function (graph) {
     animationEasingUpdate: 'quinticInOut',
     series: [
       {
-        name: 'Les Miserables',
+        name: 'Learning Paths',
         type: 'graph',
         layout: 'none',
         data: graph.nodes,
