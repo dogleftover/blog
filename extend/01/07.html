@@ -41,7 +41,7 @@
     var option;
 
     const graphData = [  // 数据
-      ['2024-02-05', 2]
+      ['2024-02-05', 3]
     ];
 const links = graphData.map(function (item, idx) {
   return {
@@ -55,7 +55,7 @@ function getVirtualData(year) {
   const end = +echarts.time.parse(+year + 1 + '-01-01');
   const dayTime = 3600 * 24 * 1000;
   const data = [];
-  const data1 = [0,0,0,0,2];
+  const data1 = [0,0,0,0,3];
   for (let time = date; time < end; time += dayTime) {
     // 取第一个数
     let num = data1[0];
