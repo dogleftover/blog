@@ -37,13 +37,14 @@
     });
     var app = {};
     // var ROOT_PATH = 'https://echarts.apache.org/examples';
-    var ROOT_PATH = 'https://dogleftover.github.io/blog-beautify';
+    // var ROOT_PATH = 'https://dogleftover.github.io/blog-beautify';
     var option;
 
-    myChart.showLoading();
+    // myChart.showLoading();
 // $.getJSON(ROOT_PATH + '/data/asset/data/les-miserables.json', function (graph) {
-$.getJSON(ROOT_PATH + '/extend/04/les-miserables.json', function (graph) {
-  myChart.hideLoading();
+$.getJSON('les-miserables.json', function (graph) {
+  console.log(graph);
+  // myChart.hideLoading();
   graph.nodes.forEach(function (node) {
     node.label = {
       show: node.symbolSize > 30
