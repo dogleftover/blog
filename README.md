@@ -18,4 +18,17 @@
 |    [上月贡献度](https://dogleftover.github.io/blog-beautify/extend/01/03.html)    |    [去年贡献度](https://dogleftover.github.io/blog-beautify/extend/01/04.html)    |    [分类](https://dogleftover.github.io/blog-beautify/extend/01/02.html)    |    [新建标签占比](https://dogleftover.github.io/blog-beautify/extend/01/01.html)    |    [往年贡献度](https://dogleftover.github.io/blog-beautify/extend/01/05.html)    |
 |    [轮播图1](https://dogleftover.github.io/blog-beautify/extend/01/bulletin_board_1.html)    |    [思维导图1](https://dogleftover.github.io/blog-beautify/extend/02/mind_mapping_1.html)    |    [2024年日历热力图](https://dogleftover.github.io/blog-beautify/extend/03/01.html)    |    [日历热力图](https://dogleftover.github.io/blog-beautify/extend/03/calendar_heatmap.html)    |    [2024-01热力图](https://dogleftover.github.io/blog-beautify/extend/01/06.html)    |
 |    [2024-02热力图](https://dogleftover.github.io/blog-beautify/extend/01/07.html)    |    [轮播图2](https://dogleftover.github.io/blog-beautify/extend/01/bulletin_board_2.html)    |    [统计分析](https://dogleftover.github.io/blog-beautify/extend/01/statistical_analysis.html)    |    [关系图](https://dogleftover.github.io/blog-beautify/extend/04/graph.html)    |        |
- 
+
+### 版本
+- css
+```
+bootstrap.min.css -> v3.3.7
+```
+
+- js
+```
+bootstrap.min.js -> v3.3.7
+chart.js -> v3.9.1
+echarts.min.js -> v5.4.3
+jquery.mim.js -> v2.1.1
+```
