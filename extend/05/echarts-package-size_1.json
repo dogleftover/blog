@@ -1,0 +1,147 @@
+{
+  "name": "echarts",
+  "size": 3835461,
+  "children": [
+    {
+      "name": "action",
+      "size": 2307,
+      "children": [
+        {
+          "name": "action/roamHelper.ts",
+          "size": 2307,
+          "value": 2307
+        }
+      ],
+      "value": 2307
+    },
+    {
+      "name": "animation",
+      "size": 44515,
+      "children": [
+        {
+          "name": "animation/basicTrasition.ts",
+          "size": 11322,
+          "value": 11322
+        },
+        {
+          "name": "animation/morphTransitionHelper.ts",
+          "size": 8706,
+          "value": 8706
+        },
+        {
+          "name": "animation/universalTransition.ts",
+          "size": 24487,
+          "value": 24487
+        }
+      ],
+      "value": 44515
+    },
+    {
+      "name": "chart",
+      "size": 1059597,
+      "children": [
+        {
+          "name": "chart/bar",
+          "size": 90538,
+          "children": [
+            {
+              "name": "chart/bar/BarSeries.ts",
+              "size": 4489,
+              "value": 4489
+            },
+            {
+              "name": "chart/bar/BarView.ts",
+              "size": 41509,
+              "value": 41509
+            },
+            {
+              "name": "chart/bar/BaseBarSeries.ts",
+              "size": 3754,
+              "value": 3754
+            },
+            {
+              "name": "chart/bar/PictorialBarSeries.ts",
+              "size": 5194,
+              "value": 5194
+            },
+            {
+              "name": "chart/bar/PictorialBarView.ts",
+              "size": 31640,
+              "value": 31640
+            },
+            {
+              "name": "chart/bar/install.ts",
+              "size": 2627,
+              "value": 2627
+            },
+            {
+              "name": "chart/bar/installPictorialBar.ts",
+              "size": 1325,
+              "value": 1325
+            }
+          ],
+          "value": 90538
+        },
+        {
+          "name": "chart/bar.ts",
+          "size": 885,
+          "value": 885
+        },
+        {
+          "name": "chart/boxplot",
+          "size": 24408,
+          "children": [
+            {
+              "name": "chart/boxplot/BoxplotSeries.ts",
+              "size": 3891,
+              "value": 3891
+            },
+            {
+              "name": "chart/boxplot/BoxplotView.ts",
+              "size": 5968,
+              "value": 5968
+            },
+            {
+              "name": "chart/boxplot/boxplotLayout.ts",
+              "size": 6718,
+              "value": 6718
+            },
+            {
+              "name": "chart/boxplot/boxplotTransform.ts",
+              "size": 2073,
+              "value": 2073
+            },
+            {
+              "name": "chart/boxplot/boxplotVisual.ts",
+              "size": 1024,
+              "value": 1024
+            },
+            {
+              "name": "chart/boxplot/install.ts",
+              "size": 1411,
+              "value": 1411
+            },
+            {
+              "name": "chart/boxplot/prepareBoxplotData.ts",
+              "size": 3323,
+              "value": 3323
+            }
+          ],
+          "value": 24408
+        },
+        {
+          "name": "chart/boxplot.ts",
+          "size": 889,
+          "value": 889
+        },
+        {
+          "name": "chart/treemap.ts",
+          "size": 887,
+          "value": 887
+        }
+      ],
+      "value": 1059597
+    }
+  ],
+  "value": 3835461
+}
