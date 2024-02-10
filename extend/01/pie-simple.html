@@ -1,0 +1,161 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=pie-simple
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+  <title>pie-simple</title>
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="width: 500px;height: 450px"></div>
+
+  <script type="text/javascript" src="../js/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.4.3/files/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/china.js"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.4.3/files/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+
+    const data1 = [3,9,8,6,1
+                  ,6,9,5,8,7
+                  ,9,8,2,8,6
+                  ,8,5,8,9,7
+                  ,6,2,5,8,7];
+    var d = 0;
+    var s = 25
+
+    function makeRandomData() {
+      if(d<25){
+        d1 = d;
+        d2 = d1 + 1;
+        d3 = d2 + 1;
+        d4 = d3 + 1;
+        d5 = d4 + 1;
+        d = d5 + 1
+        console.log("d1--"+d1+"--" + "d2--"+d2+"--" + "d3--"+d3+"--" + "d4--"+d4+"--" + "d5--"+d5+"--" + "d--"+d)
+        console.log(data1[d1]+"--" + data1[d2]+"--" + data1[d3]+"--" + data1[d4]+"--" + data1[d5])
+        return [
+          {
+            value: data1[d1],
+            name: 'A'
+          },
+          {
+            value: data1[d2],
+            name: 'B'
+          },
+          {
+            value: data1[d3],
+            name: 'C'
+          },
+          {
+            value: data1[d4],
+            name: 'D'
+          },
+          {
+            value: data1[d5],
+            name: 'E'
+          }
+        ];
+      }else{
+        d1 = 0;
+        d2 = d1 + 1;
+        d3 = d2 + 1;
+        d4 = d3 + 1;
+        d5 = d4 + 1;
+        d = d5 + 1
+        console.log("d1--"+d1+"--" + "d2--"+d2+"--" + "d3--"+d3+"--" + "d4--"+d4+"--" + "d5--"+d5+"--" + "d--"+d)
+        console.log(data1[d1]+"--" + data1[d2]+"--" + data1[d3]+"--" + data1[d4]+"--" + data1[d5])
+        return [
+          {
+            value: data1[d1],
+            name: 'A'
+          },
+          {
+            value: data1[d2],
+            name: 'B'
+          },
+          {
+            value: data1[d3],
+            name: 'C'
+          },
+          {
+            value: data1[d4],
+            name: 'D'
+          },
+          {
+            value: data1[d5],
+            name: 'E'
+          }
+        ];
+      }
+    }
+    
+    var option;
+
+    option = {
+      title: {
+        text: '分类变化情况-饼图',
+        subtext: '占比',
+        left: 'center'
+      },
+      tooltip: {
+        trigger: 'item'
+      },
+      legend: {
+        orient: 'vertical',
+        left: 'left'
+      },
+      series: [
+        {
+          name: 'Access From',
+          type: 'pie',
+          radius: [0, '50%'],
+          data: makeRandomData(),
+          emphasis: {
+            itemStyle: {
+              shadowBlur: 10,
+              shadowOffsetX: 0,
+              shadowColor: 'rgba(0, 0, 0, 0.5)'
+            }
+          }
+        }
+      ]
+    };
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+
+    setInterval(() => {
+      myChart.setOption({
+        series: {
+          data: makeRandomData()
+        }
+      });
+    }, 2000);
+  </script>
+</body>
+</html>
