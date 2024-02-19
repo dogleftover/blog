@@ -37,16 +37,18 @@
     });
     var app = {};
 
-    const data1 = [3,9,8,6,1
-                  ,6,9,5,8,7
-                  ,9,8,2,8,6
-                  ,8,5,8,9,7
-                  ,6,2,5,8,7];
+    const data1 = [3,  2,  1,  1,  0
+                  ,6,  6,  6,  4,  3
+                  ,1,  1,  5,  3,  3
+                  ,33, 13, 21, 51, 10
+                  ,0,  0,  0,  0,  1
+                  ,2,  10, 33, 1,  18
+                  ,29, 0,  6,  0,  4];
     var d = 0;
-    var s = 25
+    var s = 35
 
     function makeRandomData() {
-      if(d<25){
+      if(d<35){
         d1 = d;
         d2 = d1 + 1;
         d3 = d2 + 1;
@@ -58,23 +60,23 @@
         return [
           {
             value: data1[d1],
-            name: 'A'
+            name: '前端'
           },
           {
             value: data1[d2],
-            name: 'B'
+            name: '服务器'
           },
           {
             value: data1[d3],
-            name: 'C'
+            name: '开发环境'
           },
           {
             value: data1[d4],
-            name: 'D'
+            name: '项目构建'
           },
           {
             value: data1[d5],
-            name: 'E'
+            name: '错误总结'
           }
         ];
       }else{
@@ -89,23 +91,23 @@
         return [
           {
             value: data1[d1],
-            name: 'A'
+            name: '前端'
           },
           {
             value: data1[d2],
-            name: 'B'
+            name: '服务器'
           },
           {
             value: data1[d3],
-            name: 'C'
+            name: '开发环境'
           },
           {
             value: data1[d4],
-            name: 'D'
+            name: '项目构建'
           },
           {
             value: data1[d5],
-            name: 'E'
+            name: '错误总结'
           }
         ];
       }
