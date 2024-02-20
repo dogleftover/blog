@@ -24,8 +24,8 @@
 ### 图标
 |   01   |   02  |   03  |   04  |   05  |
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
-|   [分类0](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB0.png)   |  [分类1](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB1.png)   |  [标签0](https://dogleftover.github.io/blog-beautify/icon/%E6%A0%87%E7%AD%BE0.png)   |  [标签1](https://dogleftover.github.io/blog-beautify/icon/%E6%A0%87%E7%AD%BE1.png)   |     |
-|      |     |     |     |     |
+|   [分类0](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB0.png)   |  [分类1](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB1.png)   |  [标签0](https://dogleftover.github.io/blog-beautify/icon/%E6%A0%87%E7%AD%BE0.png)   |  [标签1](https://dogleftover.github.io/blog-beautify/icon/%E6%A0%87%E7%AD%BE1.png)   |   [展开](https://dogleftover.github.io/blog-beautify/icon/%E5%B1%95%E5%BC%80.png)  |
+|   [关闭](https://dogleftover.github.io/blog-beautify/icon/%E5%85%B3%E9%97%AD.png)   |  [回顶部](https://dogleftover.github.io/blog-beautify/icon/%E5%9B%9E%E9%A1%B6%E9%83%A8.png)   |     |     |     |
 
 [统计分析0](https://dogleftover.github.io/blog-beautify/icon/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%900.png)
 [统计分析1](https://dogleftover.github.io/blog-beautify/icon/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%901.png)
