@@ -21,6 +21,11 @@
 |   [矩形树图和旭日图的动画过渡](https://dogleftover.github.io/blog-beautify/extend/05/treemap-sunburst-transition_1.html)   |   [分类变化情况-排序](https://dogleftover.github.io/blog-beautify/extend/01/bar-race)  |  [分类变化情况-饼图](https://dogleftover.github.io/blog-beautify/extend/01/pie-simple)   |  [轮播图3](https://dogleftover.github.io/blog-beautify/extend/01/bulletin_board_3.html)   |  [2024-01贡献度](https://dogleftover.github.io/blog-beautify/extend/01/08.html)   |
 |   [分页按钮](https://dogleftover.github.io/blog-beautify/extend/01/09.html)   |  [2024每月贡献度](https://dogleftover.github.io/blog-beautify/extend/01/10.html)   |     |     |     |
 
+### 图标
+|   01   |   02  |   03  |   04  |   05  |
+|  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
+|   [分类0](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB0.png)   |  [分类1](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB1.png)   |   [统计分析0](https://dogleftover.github.io/blog-beautify/icon/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%900.png)  |  [统计分析1](https://dogleftover.github.io/blog-beautify/icon/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%901.png)   |     |
+
 ### 版本
 - css
 ```
