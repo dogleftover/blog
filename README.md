@@ -9,8 +9,8 @@
 ### 标签
 |   01   |   02  |   03  |   04  |   05  |
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
-|    [后端](https://dogleftover.github.io/blog-beautify/category/back_end.html)    |    [前端](https://dogleftover.github.io/blog-beautify/category/headend.html)    |    [微服务](https://dogleftover.github.io/blog-beautify/category/microservices.html)    |    [权限安全](https://dogleftover.github.io/blog-beautify/category/permission_security.html)    |    [项目构建](https://dogleftover.github.io/blog-beautify/category/project_build.html)    |
-|    [关系型](https://dogleftover.github.io/blog-beautify/category/relational_databases.html)    |        |        |        |        | 
+|    [后端](https://dogleftover.github.io/blog-beautify/tag/back_end.html)    |    [前端](https://dogleftover.github.io/blog-beautify/tag/headend.html)    |    [微服务](https://dogleftover.github.io/blog-beautify/tag/microservices.html)    |    [权限安全](https://dogleftover.github.io/blog-beautify/tag/permission_security.html)    |    [项目构建](https://dogleftover.github.io/blog-beautify/tag/project_build.html)    |
+|    [关系型](https://dogleftover.github.io/blog-beautify/tag/relational_databases.html)    |        |        |        |        | 
 
 ### 扩展
 |   01   |   02  |   03  |   04  |   05  |
@@ -24,7 +24,11 @@
 ### 图标
 |   01   |   02  |   03  |   04  |   05  |
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
-|   [分类0](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB0.png)   |  [分类1](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB1.png)   |   [统计分析0](https://dogleftover.github.io/blog-beautify/icon/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%900.png)  |  [统计分析1](https://dogleftover.github.io/blog-beautify/icon/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%901.png)   |     |
+|   [分类0](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB0.png)   |  [分类1](https://dogleftover.github.io/blog-beautify/icon/%E5%88%86%E7%B1%BB1.png)   |  [标签0](https://dogleftover.github.io/blog-beautify/icon/%E6%A0%87%E7%AD%BE0.png)   |  [标签1](https://dogleftover.github.io/blog-beautify/icon/%E6%A0%87%E7%AD%BE1.png)   |     |
+|      |     |     |     |     |
+
+[统计分析0](https://dogleftover.github.io/blog-beautify/icon/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%900.png)
+[统计分析1](https://dogleftover.github.io/blog-beautify/icon/%E7%BB%9F%E8%AE%A1%E5%88%86%E6%9E%901.png)
 
 ### 版本
 - css
