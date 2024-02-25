@@ -384,7 +384,7 @@
                 { name: '独占锁' },
                 { name: '排它锁' },
                 { name: '自增锁' },
-                { name: '间隙所' },
+                { name: '间隙锁' },
                 { name: '临键锁' }
             ] },
             { name: 'JDBC',
@@ -674,41 +674,151 @@
         {
         name: '工具',
         children: [
-            { name: 'Linux' },
-            { name: 'Docker' },
-            { name: 'Nginx' },
-            { name: 'Nginx' },
-            { name: 'Jenkins' }
+            { name: 'ECLIPSE',
+            children: [
+                { name: 'ECLIPSE设置与配置' },
+                { name: '代码模板' },
+                { name: '断点调试' },
+                { name: '整合GIT' },
+                { name: '整合MAVEN' }
+            ] },
+            { name: 'IDEA',
+            children: [
+                { name: 'IDEA设置与配置' },
+                { name: '代码模板' },
+                { name: '断点调试' },
+                { name: '整合GIT' },
+                { name: '整合MAVEN' }
+            ] },
+            { name: 'NAVICAT',
+            children: [
+                { name: 'NAVICAT的SQL使用' },
+                { name: 'NAVICAT的智能图表' },
+                { name: 'NAVICAT的查询创建工具' },
+                { name: 'NAVICAT的数据传输' },
+                { name: 'NAVICAT的数据模型' }
+            ] },
+            { name: 'POSTMAN',
+            children: [
+                { name: '数据驱动' },
+                { name: 'MONITOR' },
+                { name: 'JENKINS集成' }
+            ] },
+            { name: 'XSHELL',
+            children: [
+                { name: '最好的终端用户体验' },
+                { name: '代替不安全的TELNET客户端' },
+                { name: 'XSHELL在单一屏幕实现多语言' },
+                { name: '支持安全连接的TCP/IP应用的X11和任意' }
+            ] }
         ]
         },
         {
         name: '协作',
         children: [
-            { name: 'Linux' },
-            { name: 'Docker' },
-            { name: 'Nginx' },
-            { name: 'Nginx' },
-            { name: 'Jenkins' }
+            { name: 'GIT',
+            children: [
+                { name: '常见命令' },
+                { name: '分支及冲突的解决' },
+                { name: '协同开发合作' },
+                { name: 'SSH免密登录' }
+            ] },
+            { name: 'MAVEN',
+            children: [
+                { name: '仓库配置' },
+                { name: 'MAVEN工程关系' },
+                { name: '插件配置' },
+                { name: '常见命令' }
+            ] },
+            { name: '禅道',
+            children: [
+                { name: '甘特图' },
+                { name: '日志管理' },
+                { name: '统计报表' },
+                { name: '持续集成特性' },
+                { name: '业务线/项目/需求/迭代/任务' }
+            ] },
+            { name: '语雀',
+            children: [
+                { name: '碎片化/结构化/体系化' },
+                { name: '知识/知识库/团队/空间' }
+            ] },
+            { name: 'WIKI',
+            children: [
+                { name: '知识网格' },
+                { name: '协作式写作' },
+                { name: '超文本系统' }
+            ] }
         ]
         },
         {
         name: '项目',
         children: [
-            { name: 'Linux' },
-            { name: 'Docker' },
-            { name: 'Nginx' },
-            { name: 'Nginx' },
-            { name: 'Jenkins' }
+            { name: '阿里开发规范',
+            children: [
+                { name: '编程规约' },
+                { name: '异常日志' },
+                { name: '安全规约' },
+                { name: 'MYSQL数据库规约' },
+                { name: '工程结构' },
+                { name: '设计规约' }
+            ] },
+            { name: '日志开发框架',
+            children: [
+                { name: 'SLF4J' },
+                { name: 'LOG4J' },
+                { name: 'LOGBACK' },
+                { name: 'COMMONS LOGGING' }
+            ] },
+            { name: '单元测试框架',
+            children: [
+                { name: 'JUNIT框架' },
+                { name: 'MOCK框架' }
+            ] },
+            { name: '代码检测框架',
+            children: [
+                { name: 'SONARQUBE' },
+                { name: 'FINDBUGS' }
+            ] },
+            { name: '持续集成工具',
+            children: [
+                { name: 'JENKINS' }
+            ] }
         ]
         },
         {
         name: '测试',
         children: [
-            { name: 'Linux' },
-            { name: 'Docker' },
-            { name: 'Nginx' },
-            { name: 'Nginx' },
-            { name: 'Jenkins' }
+            { name: '测试基础',
+            children: [
+                { name: '测试理论' },
+                { name: '测试计划' },
+                { name: '缺陷管理' }
+            ] },
+            { name: '黑盒测试',
+            children: [
+                { name: '测试策略' },
+                { name: '测试用例' },
+                { name: '测试执行' }
+            ] },
+            { name: '性能测试',
+            children: [
+                { name: '性能测试计划' },
+                { name: '负载测试' },
+                { name: '压力测试' }
+            ] },
+            { name: '白盒测试',
+            children: [
+                { name: '单元测试计划' },
+                { name: '静态测试' },
+                { name: '动态测试' }
+            ] },
+            { name: '移动端测试',
+            children: [
+                { name: 'APP功能' },
+                { name: 'APP性能' },
+                { name: 'APP自动化' }
+            ] }
         ]
         },
     ]
