@@ -1,0 +1,119 @@
+{
+    "name": "Web开发",
+    "children": [
+        {
+        "name": "前端",
+        "children": [
+            {"name": "HTML",
+            "children": [
+                { "name": "链接" },{ "name": "图像" },{ "name": "表格" },{ "name": "列表" },{ "name": "区块" },{ "name": "布局" },{ "name": "表单" },{ "name": "iframe" },{ "name": "颜色" }
+            ]
+            }, 
+            {"name": "CSS",
+            "children": [
+                { "name": "选择器" },{ "name": "插入样式表" },{ "name": "背景" },{ "name": "字体" },{ "name": "盒子模型" },{ "name": "浮动" },{ "name": "组合选择符" },{ "name": "伪类" },{ "name": "伪元素" },{ "name": "过渡" },{ "name": "动画" },{ "name": "弹性盒子" },{ "name": "多媒体查询" }
+            ]
+            }, 
+            {"name": "Sass"}, 
+            {"name": "Less"}, 
+            {"name": "JavaScript",
+            "children": [
+                { "name": "基础", "children": [{ "name": "变量" },{ "name": "数据类型" },{ "name": "函数" },{ "name": "事件" },{ "name": "字符串" },{ "name": "运算符" },{ "name": "流程语句" },{ "name": "DOM操作" },{ "name": "正则表达式" }] },
+                { "name": "Ajax"},
+                { "name": "jQuery"},
+                { "name": "ES6", "children": [{ "name": "解构赋值" },{ "name": "对象" },{ "name": "数组" },{ "name": "函数" },{ "name": "Class类" },{ "name": "模块" },{ "name": "Promise对象" }] },
+                { "name": "TypeScript", "children": [{ "name": "变量声明" },{ "name": "元组" },{ "name": "枚举" },{ "name": "类型别名" },{ "name": "类" },{ "name": "构造函数" },{ "name": "继承" },{ "name": "抽象类" },{ "name": "接口" },{ "name": "属性封装" },{ "name": "泛型" }] },
+                { "name": "Node.js", "children": [{ "name": "回调函数" },{ "name": "Buffer" },{ "name": "Stream" },{ "name": "模块系统" },{ "name": "路由" },{ "name": "GET/POST请求" },{ "name": "Web模块" },{ "name": "Express框架" },{ "name": "RESTful API" },{ "name": "连接MySQL" }] }
+            ]
+            }, 
+            {"name": "Vue.js",
+            "children": [
+                { "name": "Vue3"},
+                { "name": "Vue Router"},
+                { "name": "Vuex"},
+                { "name": "Axios"},
+                { "name": "webpack"},
+                { "name": "Vite"},
+                { "name": "ECharts"},
+                { "name": "View UI"},
+                { "name": "Element Plus"},
+                { "name": "Vant"},
+                { "name": "uni-app"},
+                { "name": "Nuxt"}
+            ]
+            }
+        ]
+        },
+        {
+        "name": "后端",
+        "children": [
+            { "name": "基础", 
+            "children": [
+                { "name": "JavaSE"},
+                { "name": "java新特性"},
+                { "name": "JUC"},
+                { "name": "JVM"}
+            ]
+            },
+            { "name": "JavaWeb", 
+            "children": [
+                { "name": "Servlet"},
+                { "name": "JSP"},
+                { "name": "JDBC"}
+            ]
+            },
+            { "name": "必备", 
+            "children": [
+                { "name": "Netty"},
+                { "name": "Git"},
+                { "name": "Maven"},
+                { "name": "Gradle"}
+            ]
+            },
+            { "name": "框架",
+            "children": [
+                { "name": "Spring"},
+                { "name": "Spring MVC"},
+                { "name": "MyBatis"},
+                { "name": "MyBatis-Plus"},
+                { "name": "Spring Boot"},
+                { "name": "Spring Cloud",
+                "children": [{ "name": "Eureka"}, { "name": "Zookeeper"}, { "name": "Consul"}, { "name": "Ribbon"}, { "name": "OpenFeign"}, { "name": "Hystrix"}, { "name": "GateWay"}, { "name": "Config"}, { "name": "Bus"}, { "name": "Stream"}, { "name": "Sleuth"}, { "name": "Nacos"}, { "name": "Sentinel"}, { "name": "Seata"}]
+                }
+            ]
+            },
+            { "name": "权限认证", 
+            "children": [
+                { "name": "Shiro"},
+                { "name": "Spring Security"}
+            ]
+            },
+            { "name": "数据库", 
+            "children": [
+                { "name": "MySQL"},
+                { "name": "Redis"}
+            ]
+            },
+            { "name": "消息队列", 
+            "children": [
+                { "name": "RabbitMQ"},
+                { "name": "MQTT"}
+            ]
+            },
+            { "name": "沉淀", 
+            "children": [
+                { "name": "数据结构与算法"},
+                { "name": "设计模式"},
+                { "name": "领域驱动设计"},
+                { "name": "简洁之道"}
+
+            ]
+            }
+        ]
+        },
+        {
+        "name": "运维",
+        "children": [{ "name": "Linux" },{ "name": "Docker" },{ "name": "Nginx" },{ "name": "Jenkins" }]
+        }
+    ]
+}
