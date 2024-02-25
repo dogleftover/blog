@@ -45,7 +45,7 @@
 $.get('flare.json', function (data) {
   // myChart.hideLoading();
   data.children.forEach(function (datum, index) {
-    index % 2 === 0 && (datum.collapsed = true);
+    index % 0 === 0 && (datum.collapsed = true);
   });
   myChart.setOption(
     (option = {
