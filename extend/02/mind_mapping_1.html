@@ -267,119 +267,277 @@
     name: 'Java开发',
     children: [
         {
+        name: '起步',
+        children: [
+            { name: '计算机硬件基础',
+            children: [
+                { name: 'CPU/内存/硬盘' },
+                { name: '软件硬件关联' }
+            ]},
+            { name: 'WINDOWS命令行基础',
+            children: [
+                { name: '环境变量' },
+                { name: 'PATH/CLASSPATH' }
+            ] },
+            { name: '虚拟机的安装和使用',
+            children: [
+                { name: 'VMWARE' },
+                { name: 'LINUX安装' }
+            ] },
+            { name: '二进制深入讲解',
+            children: [
+                { name: '二/八/十/十六进制' },
+                { name: '原码/反码/补码运算' }
+            ] },
+            { name: 'LINUX的常用命令',
+            children: [
+                { name: '进程/文件命令' },
+                { name: '网络/安全命令' }
+            ] }
+        ]
+        },
+        {
+        name: 'JavaSE',
+        children: [
+            { name: '基本语法和面向对象',
+            children: [
+                { name: '标识符和保留字' },
+                { name: '数据类型' },
+                { name: '流程控制' },
+                { name: '封装' },
+                { name: '继承' },
+                { name: '多态' }
+            ] },
+            { name: '集合框架',
+            children: [
+                { name: 'COLLECTION' },
+                { name: 'LIST' },
+                { name: 'SET' },
+                { name: 'MAP' },
+                { name: 'COLLECTIONS' },
+                { name: 'ARRAYS' }
+            ] },
+            { name: 'IO框架',
+            children: [
+                { name: '字节流' },
+                { name: '字符流' },
+                { name: '缓冲流' },
+                { name: '处理流' },
+                { name: '标准流' },
+                { name: '转换流' }
+            ] },
+            { name: '多线程编程',
+            children: [
+                { name: '线程、进程、程序' },
+                { name: 'THREAD和RUNNABLE' },
+                { name: '线程的生命周期' },
+                { name: '线程的同步与加锁' },
+                { name: '线程池' },
+                { name: 'LAMBDA表达式' },
+                { name: 'STREAM API' },
+                { name: '自定义注解' }
+            ] },
+            { name: '网络编程',
+            children: [
+                { name: '网络基础知识' },
+                { name: 'INETADDRESS' },
+                { name: 'TCP' },
+                { name: 'UDP' },
+                { name: 'SOCKET' },
+                { name: 'NETTY' }
+            ] }
+        ]
+        },
+        {
+        name: 'MySQL',
+        children: [
+            { name: '基本语法',
+            children: [
+                { name: 'DDL' },
+                { name: 'DML' },
+                { name: 'DCL' },
+                { name: '数据库表设计' },
+                { name: '视图' },
+                { name: '约束' }
+            ] },
+            { name: '索引机制',
+            children: [
+                { name: '索引的实现机制' },
+                { name: '索引的数据结构' },
+                { name: '索引的分类' },
+                { name: '索引与存储引擎' },
+                { name: '索引的设计' },
+                { name: '索引的优化' }
+            ] },
+            { name: '事务机制',
+            children: [
+                { name: 'ACID' },
+                { name: '事务的实现原理' },
+                { name: 'UNDO LOG' },
+                { name: 'REDO LOG' },
+                { name: 'BIN LOG' },
+                { name: 'MVCC和二阶段提交' }
+            ] },
+            { name: '锁机制',
+            children: [
+                { name: '共享锁' },
+                { name: '独占锁' },
+                { name: '排它锁' },
+                { name: '自增锁' },
+                { name: '间隙所' },
+                { name: '临键锁' }
+            ] },
+            { name: 'JDBC',
+            children: [
+                { name: 'SPI' },
+                { name: 'DRIVERMANAGER' },
+                { name: 'CONNECTION' },
+                { name: 'STATEMENT和PREPARESTATEMENT' },
+                { name: 'RESULTSET' },
+                { name: '反射' }
+            ] }
+        ]
+        },
+        {
         name: '前端',
         children: [
-            {name: 'HTML',
+            { name: 'HTML和HTML5',
             children: [
-                { name: '链接' },{ name: '图像' },{ name: '表格' },{ name: '列表' },{ name: '区块' },{ name: '布局' },{ name: '表单' },{ name: 'iframe' },{ name: '颜色' }
-            ]
-            }, 
-            {name: 'CSS',
+                { name: '共享锁' },
+                { name: '独占锁' },
+                { name: '排它锁' },
+                { name: '自增锁' },
+                { name: '间隙所' },
+                { name: '临键锁' }
+            ] },
+            { name: 'CSS3',
             children: [
-                { name: '选择器' },{ name: '插入样式表' },{ name: '背景' },{ name: '字体' },{ name: '盒子模型' },{ name: '浮动' },{ name: '组合选择符' },{ name: '伪类' },{ name: '伪元素' },{ name: '过渡' },{ name: '动画' },{ name: '弹性盒子' },{ name: '多媒体查询' }
-            ]
-            }, 
-            {name: 'Sass'}, 
-            {name: 'Less'}, 
-            {name: 'JavaScript',
+                { name: '共享锁' },
+                { name: '独占锁' },
+                { name: '排它锁' },
+                { name: '自增锁' },
+                { name: '间隙所' },
+                { name: '临键锁' }
+            ] },
+            { name: 'JAVASCRIPT和JQUERY',
             children: [
-                { name: '基础', children: [{ name: '变量' },{ name: '数据类型' },{ name: '函数' },{ name: '事件' },{ name: '字符串' },{ name: '运算符' },{ name: '流程语句' },{ name: 'DOM操作' },{ name: '正则表达式' }] },
-                { name: 'Ajax'},
-                { name: 'jQuery'},
-                { name: 'ES6', children: [{ name: '解构赋值' },{ name: '对象' },{ name: '数组' },{ name: '函数' },{ name: 'Class类' },{ name: '模块' },{ name: 'Promise对象' }] },
-                { name: 'TypeScript', children: [{ name: '变量声明' },{ name: '元组' },{ name: '枚举' },{ name: '类型别名' },{ name: '类' },{ name: '构造函数' },{ name: '继承' },{ name: '抽象类' },{ name: '接口' },{ name: '属性封装' },{ name: '泛型' },] },
-                { name: 'Node.js', children: [{ name: '回调函数' },{ name: 'Buffer' },{ name: 'Stream' },{ name: '模块系统' },{ name: '路由' },{ name: 'GET/POST请求' },{ name: 'Web模块' },{ name: 'Express框架' },{ name: 'RESTful API' },{ name: '连接MySQL' }] }
-            ]
-            }, 
-            {name: 'Vue.js',
+                { name: '共享锁' },
+                { name: '独占锁' },
+                { name: '排它锁' },
+                { name: '自增锁' },
+                { name: '间隙所' },
+                { name: '临键锁' }
+            ] },
+            { name: 'AJAX',
             children: [
-                { name: 'Vue3'},
-                { name: 'Vue Router'},
-                { name: 'Vuex'},
-                { name: 'Axios'},
-                { name: 'webpack'},
-                { name: 'Vite'},
-                { name: 'ECharts'},
-                { name: 'View UI'},
-                { name: 'Element Plus'},
-                { name: 'Vant'},
-                { name: 'uni-app'},
-                { name: 'Nuxt'}
-            ]
-            }
+                { name: '共享锁' },
+                { name: '独占锁' },
+                { name: '排它锁' },
+                { name: '自增锁' },
+                { name: '间隙所' },
+                { name: '临键锁' }
+            ] },
+            { name: 'VUE',
+            children: [
+                { name: '共享锁' },
+                { name: '独占锁' },
+                { name: '排它锁' },
+                { name: '自增锁' },
+                { name: '间隙所' },
+                { name: '临键锁' }
+            ] }
         ]
         },
         {
         name: '后端',
         children: [
-            { name: '基础', 
-            children: [
-                { name: 'JavaSE'},
-                { name: 'java新特性'},
-                { name: 'JUC'},
-                { name: 'JVM'}
-            ]
-            },
-            { name: 'JavaWeb', 
-            children: [
-                { name: 'Servlet'},
-                { name: 'JSP'},
-                { name: 'JDBC'}
-            ]
-            },
-            { name: '必备', 
-            children: [
-                { name: 'Netty'},
-                { name: 'Git'},
-                { name: 'Maven'},
-                { name: 'Gradle'}
-            ]
-            },
-            { name: '框架',
-            children: [
-                { name: 'Spring'},
-                { name: 'Spring MVC'},
-                { name: 'MyBatis'},
-                { name: 'MyBatis-Plus'},
-                { name: 'Spring Boot'},
-                { name: 'Spring Cloud',
-                children: [{ name: 'Eureka'}, { name: 'Zookeeper'}, { name: 'Consul'}, { name: 'Ribbon'}, { name: 'OpenFeign'}, { name: 'Hystrix'}, { name: 'GateWay'}, { name: 'Config'}, { name: 'Bus'}, { name: 'Stream'}, { name: 'Sleuth'}, { name: 'Nacos'}, { name: 'Sentinel'}, { name: 'Seata'}]
-                }
-            ]
-            },
-            { name: '权限认证', 
-            children: [
-                { name: 'Shiro'},
-                { name: 'Spring Security'}
-            ]
-            },
-            { name: '数据库', 
-            children: [
-                { name: 'MySQL'},
-                { name: 'Redis'}
-            ]
-            },
-            { name: '消息队列', 
-            children: [
-                { name: 'RabbitMQ'},
-                { name: 'MQTT'}
-            ]
-            },
-            { name: '沉淀', 
-            children: [
-                { name: '数据结构与算法'},
-                { name: '设计模式'},
-                { name: '领域驱动设计'},
-                { name: '简洁之道'}
-
-            ]
-            }
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
         ]
         },
         {
-        name: '运维',
-        children: [{ name: 'Linux' },{ name: 'Docker' },{ name: 'Nginx' },{ name: 'Jenkins' }]
-        }
+        name: '设计',
+        children: [
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
+        ]
+        },
+        {
+        name: '数据结构',
+        children: [
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
+        ]
+        },
+        {
+        name: '算法',
+        children: [
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
+        ]
+        },
+        {
+        name: '源码',
+        children: [
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
+        ]
+        },
+        {
+        name: '工具',
+        children: [
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
+        ]
+        },
+        {
+        name: '协作',
+        children: [
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
+        ]
+        },
+        {
+        name: '项目',
+        children: [
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
+        ]
+        },
+        {
+        name: '测试',
+        children: [
+            { name: 'Linux' },
+            { name: 'Docker' },
+            { name: 'Nginx' },
+            { name: 'Nginx' },
+            { name: 'Jenkins' }
+        ]
+        },
     ]
     };
 
@@ -439,11 +597,12 @@
             type: 'tree',
             name: 'Java',
             data: [data2],
-            top: '20%',
+            top: '1%',
             left: '60%',
-            bottom: '22%',
+            bottom: '1%',
             right: '18%',
             symbolSize: 7,
+            initialTreeDepth: 1,
             label: {
             position: 'left',
             verticalAlign: 'middle',
