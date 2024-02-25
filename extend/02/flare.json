@@ -35,8 +35,16 @@
                 { "name": "选择器" },{ "name": "插入样式表" },{ "name": "背景" },{ "name": "字体" },{ "name": "盒子模型" },{ "name": "浮动" },{ "name": "组合选择符" },{ "name": "伪类" },{ "name": "伪元素" },{ "name": "过渡" },{ "name": "动画" },{ "name": "弹性盒子" },{ "name": "多媒体查询" }
             ]
             }, 
-            {"name": "Sass"}, 
-            {"name": "Less"}, 
+            {"name": "Sass",
+            "children": [
+                { "name": "特色功能" },{ "name": "语法格式" },{ "name": "使用 Sass" },{ "name": "CSS 功能拓展" },{ "name": "注释 /* */ 与 //" },{ "name": "SassScript" },{ "name": "@-Rules 与指令" },{ "name": "控制指令" },{ "name": "混合指令" },{ "name": "函数指令" },{ "name": "输出格式" },{ "name": "拓展 Sass" }
+            ]
+            }, 
+            {"name": "Less",
+            "children": [
+                { "name": "概览" },{ "name": "变量(Variables)" },{ "name": "混合(Mixins)" },{ "name": "嵌套(Nesting)" },{ "name": "运算(Operations)" },{ "name": "转义(Escaping)" },{ "name": "函数(Functions)" },{ "name": "命名空间和访问符" },{ "name": "映射(Maps)" },{ "name": "作用域(Scope)" },{ "name": "注释(Comments)" },{ "name": "导入(lmporting)" }
+            ]
+            }, 
             {"name": "JavaScript",
             "children": [
                 { "name": "基础", "children": [{ "name": "变量" },{ "name": "数据类型" },{ "name": "函数" },{ "name": "事件" },{ "name": "字符串" },{ "name": "运算符" },{ "name": "流程语句" },{ "name": "DOM操作" },{ "name": "正则表达式" }] },
@@ -197,7 +205,36 @@
         },
         {
         "name": "安卓开发",
-        "children": [{ "name": "Linux" },{ "name": "Docker" },{ "name": "Nginx" },{ "name": "Jenkins" }]
+        "children": [
+            { "name": "入门",
+            "children": [
+                { "name": "开发环境与工具" },{ "name": "系统架构" },{ "name": "四大组件" },{ "name": "Fragment" },{ "name": "Preference" },
+                { "name": "Intent与IntentFilter" },{ "name": "View" },{ "name": "UI控件" },{ "name": "动画" },{ "name": "事件处理" },
+                { "name": "数据存储与IO" },{ "name": "应用资源" },{ "name": "图形与图像" },{ "name": "网络技术" },
+                { "name": "其他",
+                "children": [{ "name": "AndroidManifest"}, { "name": "Context"}]
+                }
+            ] },
+            { "name": "进阶",
+            "children": [
+                { "name": "JetPack" },{ "name": "架构模式" },{ "name": "跨进程通信" },{ "name": "进程和线程" },{ "name": "序列化" },
+                { "name": "权限管理" },{ "name": "UI适配" },{ "name": "UI控件" },{ "name": "Material Design库" },{ "name": "网络技术" },
+                { "name": "系统服务" },{ "name": "推送" },{ "name": "动画" },{ "name": "OpenGL ES" },{ "name": "多媒体" },
+                { "name": "传感器" },{ "name": "Gradle" },{ "name": "安全加固" },{ "name": "原理机制" },
+                { "name": "其他",
+                "children": [{ "name": "Gesture"}, { "name": "TTS"}, { "name": "Doze模式"}, { "name": "多窗口模式"}, { "name": "打包与安装"}]
+                }
+            ] },
+            { "name": "高级",
+            "children": [
+                { "name": "新特性" },{ "name": "NDK" },{ "name": "组件化" },{ "name": "插件化" },{ "name": "热修复" },{ "name": "Hook技术" },
+                { "name": "性能优化" },{ "name": "异常处理" },{ "name": "Framework" },{ "name": "AOP" },{ "name": "依赖注入" },{ "name": "Support Annotation Library库" },
+                { "name": "Percent Support Library库" },{ "name": "单元测试" },{ "name": "UI自动化测试" },{ "name": "静态代码分析" },
+                { "name": "常用工具",
+                "children": [{ "name": "DDMS"}, { "name": "SysTrace"}, { "name": "TraceView"}, { "name": "Memory Monitor"}, { "name": "Heap Dump"}, { "name": "LeakCanary"}, { "name": "MAT"}, { "name": "Andorid Profile"}] 
+                }
+            ] }
+        ]
         }
     ]
 }
