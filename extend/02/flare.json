@@ -2,6 +2,27 @@
     "name": "Web开发",
     "children": [
         {
+        "name": "UI设计",
+        "children": [
+            { "name": "手绘",
+            "children": [
+                { "name": "基础素描" },{ "name": "结构素描" },{ "name": "光影素描" },{ "name": "色彩" },{ "name": "图标绘制" }
+            ] },
+            { "name": "设计工具及品牌平面设计",
+            "children": [
+                { "name": "ps" },{ "name": "Ai" },{ "name": "字体设计" },{ "name": "商业插画" },{ "name": "VIS品牌设计" },{ "name": "平面物料设计" }
+            ] },
+            { "name": "设计",
+            "children": [
+                { "name": "H5运营设计" },{ "name": "网页设计" },{ "name": "电商设计" },{ "name": "B端后台设计" }
+            ] },
+            { "name": "移动端UI/UE交互设计",
+            "children": [
+                { "name": "产品/交互设计" },{ "name": "MAC系统移动端APP小程序界面规范" },{ "name": "MAC系统Sketch项目实战" },{ "name": "Principle+Figma Ul设计利器" },{ "name": "UI交互动效+视频剪辑" }
+            ] }
+        ]
+        },
+        {
         "name": "前端",
         "children": [
             {"name": "HTML",
@@ -113,6 +134,69 @@
         },
         {
         "name": "运维",
+        "children": [
+            { "name": "初级",
+            "children": [
+                { "name": "Linux基础" },{ "name": "shell脚本编程" },{ "name": "Linux内核，进程管理" },{ "name": "网络管理" }
+            ] },
+            { "name": "中级",
+            "children": [
+                { "name": "互联网常见服务" },{ "name": "网络安全，防火墙" },{ "name": "web服务" },{ "name": "负载均衡Nginx，Lvs" },{ "name": "数据库" },
+                { "name": "ansible自动化运维" },{ "name": "监控神器zabbix" },{ "name": "网络安全OpenVPN" }
+            ] },
+            { "name": "高级",
+            "children": [
+                { "name": "虚拟化",
+                "children": [{ "name": "KVM+Openstack云平台"}, { "name": "Docker"}]
+                },
+                { "name": "日志分析系统" },{ "name": "注册中心Zookeeper" },{ "name": "Jenkins" },{ "name": "Keepalived高可用集群" },
+                { "name": "监控系统Prometheus" },{ "name": "消息队列kafka" },{ "name": "必备技能-k8s" }
+            ] }
+        ]
+        },
+        {
+        "name": "软件测试",
+        "children": [
+            { "name": "软件测试流程",
+            "children": [
+                { "name": "需求和测试需求分析" },{ "name": "测试计划制定和编写" },{ "name": "评审和风险分析" },{ "name": "测试总结和报告" }
+            ] },
+            { "name": "web专项测试",
+            "children": [
+                { "name": "web测试环境搭建" },{ "name": "web专项测试分析" },{ "name": "测试用例设计和编写" },{ "name": "测试执行和缺陷报告编写" },{ "name": "测试评审和总结" }
+            ] },
+            { "name": "通用软件测试概述",
+            "children": [
+                { "name": "软件测试的由来和缺陷报告" },{ "name": "用例和用例设计方法:等价类、边界值" },{ "name": "测试流程和用例设计方法:因果图、判定表、场景法" },
+                { "name": "用例设计方法:正交实验" },{ "name": "软件工程、开发模型、软件质量模型" },{ "name": "测试模型、测试方法、软件质量保证" }
+            ] },
+            { "name": "web自动化测试",
+            "children": [
+                { "name": "自动化测试基础和Selenium IDE" },{ "name": "自动化测试框架构建-Selenium IDE实现" },{ "name": "Selenium基础和环境配置" },{ "name": "Selenium八种元素定位方式" },
+                { "name": "Selenium Webdriver详解和常用API" },{ "name": "Selenium数据驱动、模块驱动、关键字驱动" },{ "name": "pytest框架" },{ "name": "Selenium自动化框架集成:邮件发送+日志" }
+            ] },
+            { "name": "移动APP自动化测试",
+            "children": [
+                { "name": "移动端测试" },{ "name": "Android技术概述" },{ "name": "Android测试环境配置" },{ "name": "ADB命令" },
+                { "name": "Monkey自动化测试" },{ "name": "HTML5测试" },{ "name": "Appium和APP元素定位" },{ "name": "App元素控制" },
+                { "name": "自动化框架集成:邮件发送+日志" },{ "name": "Java+Junit 实现 APPium 自动化测测试" }
+            ] },
+            { "name": "接口测试工具和接口自动化测试",
+            "children": [
+                { "name": "网络基础和网络协议" },{ "name": "接口测试基础和API文档阅读分析技巧" },{ "name": "HTTP协议的请求、响应、请求方法基础" },{ "name": "请求参数和cookie、session、token基础" },
+                { "name": "webservice和socket基础" },{ "name": "postman应用:请求、响应的分析、参数化、断言" },{ "name": "Jmeter接口测试:HTTP协议、数据库相关" },{ "name": "Fiddler用于抓包:HTTPS、APP" },
+                { "name": "接口自动化:Python+requests+unittest" },{ "name": "接口集成和Jenkins应用" }
+            ] },
+            { "name": "性能测试",
+            "children": [
+                { "name": "性能测试术语和流程:并发、响应时间、吞吐量" },{ "name": "LoadRunner 12.55工具原理" },{ "name": "LoadRunner脚本录制与调试:参数化和检查点" },{ "name": "LoadRunner场景设计" },
+                { "name": "LR集合点、IP欺骗技术、多机联合负载测试" },{ "name": "LR过程监控、关联图表数据分析" },{ "name": "LoadRunner测试结果分析" },{ "name": "LR性能调优" },
+                { "name": "Jmeter性能测试应用" },{ "name": "Jmeter用于大数据量测试" },{ "name": "Jmeter服务器监控测试平台" }
+            ] }
+        ]
+        },
+        {
+        "name": "安卓开发",
         "children": [{ "name": "Linux" },{ "name": "Docker" },{ "name": "Nginx" },{ "name": "Jenkins" }]
         }
     ]
