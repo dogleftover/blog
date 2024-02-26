@@ -322,12 +322,30 @@
               children: [
                 { name: 'Q-Learning',
                   children: [
-                    { name: '人工神经网络' },{ name: 'BP神经网络' },{ name: 'CNN卷积神经网络' },{ name: 'RNN循环神经网络' }
+                    { name: 'Q-Table' },{ name: 'SARSA' },{ name: 'Sarsa Lambda' }
                   ] 
                 },
                 { name: '深度强化学习',
                   children: [
-                    { name: '人工神经网络' },{ name: 'BP神经网络' },{ name: 'CNN卷积神经网络' },{ name: 'RNN循环神经网络' }
+                    { name: 'Deep Q-Learning Network',
+                      children: [
+                        { name: '算法思想与具体流程' },{ name: '代码实战 DQN' },{ name: 'Double DQN' },{ name: 'Dueling DQN' }
+                      ]  
+                    },
+                    { name: 'Policy Gradient 策略梯度' },
+                    { name: 'Actor Critic',
+                      children: [
+                        { name: 'A3C' }
+                      ]   
+                    },
+                    { name: 'DDPG' },
+                    { name: 'TD3' },
+                    { name: 'PPO',
+                      children: [
+                        { name: 'PPO1' },{ name: 'TRPO' },{ name: 'PPO2' }
+                      ]   
+                    },
+                    { name: 'DPPO' }
                   ]  
                 },
               ] 
