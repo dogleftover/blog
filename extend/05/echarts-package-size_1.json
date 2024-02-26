@@ -1,147 +1,310 @@
 {
-  "name": "echarts",
-  "size": 3835461,
+  "name": "Web",
+  "size": 1000,
   "children": [
     {
-      "name": "action",
-      "size": 2307,
+      "name": "UI设计",
+      "size": 200,
       "children": [
         {
-          "name": "action/roamHelper.ts",
-          "size": 2307,
-          "value": 2307
+          "name": "手绘",
+          "size": 50,
+          "value": 50
+        },
+        {
+          "name": "设计工具及品牌平面设计",
+          "size": 50,
+          "value": 50
+        },
+        {
+          "name": "设计",
+          "size": 50,
+          "value": 50
+        },
+        {
+          "name": "移动端UI/UE交互设计",
+          "size": 50,
+          "value": 50
         }
       ],
-      "value": 2307
+      "value": 200
     },
     {
-      "name": "animation",
-      "size": 44515,
+      "name": "前端",
+      "size": 200,
       "children": [
         {
-          "name": "animation/basicTrasition.ts",
-          "size": 11322,
-          "value": 11322
+          "name": "HTML",
+          "size": 30,
+          "value": 30
         },
         {
-          "name": "animation/morphTransitionHelper.ts",
-          "size": 8706,
-          "value": 8706
+          "name": "CSS",
+          "size": 30,
+          "value": 30
         },
         {
-          "name": "animation/universalTransition.ts",
-          "size": 24487,
-          "value": 24487
+          "name": "Sass",
+          "size": 20,
+          "value": 20
+        },
+        {
+          "name": "Less",
+          "size": 20,
+          "value": 20
+        },
+        {
+          "name": "JavaScript",
+          "size": 50,
+          "value": 50
+        },
+        {
+          "name": "Vue.js",
+          "size": 50,
+          "value": 50
         }
       ],
-      "value": 44515
+      "value": 200
     },
     {
-      "name": "chart",
-      "size": 1059597,
+      "name": "后端",
+      "size": 200,
       "children": [
         {
-          "name": "chart/bar",
-          "size": 90538,
-          "children": [
-            {
-              "name": "chart/bar/BarSeries.ts",
-              "size": 4489,
-              "value": 4489
-            },
-            {
-              "name": "chart/bar/BarView.ts",
-              "size": 41509,
-              "value": 41509
-            },
-            {
-              "name": "chart/bar/BaseBarSeries.ts",
-              "size": 3754,
-              "value": 3754
-            },
-            {
-              "name": "chart/bar/PictorialBarSeries.ts",
-              "size": 5194,
-              "value": 5194
-            },
-            {
-              "name": "chart/bar/PictorialBarView.ts",
-              "size": 31640,
-              "value": 31640
-            },
-            {
-              "name": "chart/bar/install.ts",
-              "size": 2627,
-              "value": 2627
-            },
-            {
-              "name": "chart/bar/installPictorialBar.ts",
-              "size": 1325,
-              "value": 1325
-            }
-          ],
-          "value": 90538
+          "name": "基础",
+          "size": 35,
+          "value": 35
         },
         {
-          "name": "chart/bar.ts",
-          "size": 885,
-          "value": 885
+          "name": "JavaWeb",
+          "size": 10,
+          "value": 10
         },
         {
-          "name": "chart/boxplot",
-          "size": 24408,
-          "children": [
-            {
-              "name": "chart/boxplot/BoxplotSeries.ts",
-              "size": 3891,
-              "value": 3891
-            },
-            {
-              "name": "chart/boxplot/BoxplotView.ts",
-              "size": 5968,
-              "value": 5968
-            },
-            {
-              "name": "chart/boxplot/boxplotLayout.ts",
-              "size": 6718,
-              "value": 6718
-            },
-            {
-              "name": "chart/boxplot/boxplotTransform.ts",
-              "size": 2073,
-              "value": 2073
-            },
-            {
-              "name": "chart/boxplot/boxplotVisual.ts",
-              "size": 1024,
-              "value": 1024
-            },
-            {
-              "name": "chart/boxplot/install.ts",
-              "size": 1411,
-              "value": 1411
-            },
-            {
-              "name": "chart/boxplot/prepareBoxplotData.ts",
-              "size": 3323,
-              "value": 3323
-            }
-          ],
-          "value": 24408
+          "name": "必备",
+          "size": 35,
+          "value": 35
         },
         {
-          "name": "chart/boxplot.ts",
-          "size": 889,
-          "value": 889
+          "name": "框架",
+          "size": 35,
+          "value": 35
         },
         {
-          "name": "chart/treemap.ts",
-          "size": 887,
-          "value": 887
+          "name": "权限认证",
+          "size": 20,
+          "value": 20
+        },
+        {
+          "name": "数据库",
+          "size": 20,
+          "value": 20
+        },
+        {
+          "name": "消息队列",
+          "size": 15,
+          "value": 15
+        },
+        {
+          "name": "沉淀",
+          "size": 30,
+          "value": 30
         }
       ],
-      "value": 1059597
+      "value": 200
+    },
+    {
+      "name": "运维",
+      "size": 200,
+      "children": [
+        {
+          "name": "初级",
+          "size": 60,
+          "children": [
+            {
+              "name": "Linux基础",
+              "size": 15,
+              "value": 15
+            },
+            {
+              "name": "shell脚本编程",
+              "size": 15,
+              "value": 15
+            },
+            {
+              "name": "Linux内核，进程管理",
+              "size": 15,
+              "value": 15
+            },
+            {
+              "name": "网络管理",
+              "size": 15,
+              "value": 15
+            }
+          ],
+          "value": 60
+        },
+        {
+          "name": "中级",
+          "size": 70,
+          "children": [
+            {
+              "name": "互联网常见服务",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "网络安全，防火墙",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "web服务",
+              "size": 5,
+              "value": 5
+            },
+            {
+              "name": "负载均衡Nginx，Lvs",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "数据库",
+              "size": 5,
+              "value": 5
+            },
+            {
+              "name": "ansible自动化运维",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "监控神器zabbix",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "网络安全OpenVPN",
+              "size": 10,
+              "value": 10
+            }
+          ],
+          "value": 70
+        },
+        {
+          "name": "高级",
+          "size": 70,
+          "children": [
+            {
+              "name": "虚拟化",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "日志分析系统",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "注册中心Zookeeper",
+              "size": 5,
+              "value": 5
+            },
+            {
+              "name": "Jenkins",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "Keepalived高可用集群",
+              "size": 5,
+              "value": 5
+            },
+            {
+              "name": "监控系统Prometheus",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "消息队列kafka",
+              "size": 10,
+              "value": 10
+            },
+            {
+              "name": "必备技能-k8s",
+              "size": 10,
+              "value": 10
+            }
+          ],
+          "value": 70
+        }
+      ],
+      "value": 200
+    },
+    {
+      "name": "软件测试",
+      "size": 200,
+      "children": [
+        {
+          "name": "软件测试流程",
+          "size": 20,
+          "value": 20
+        },
+        {
+          "name": "web专项测试",
+          "size": 30,
+          "value": 30
+        },
+        {
+          "name": "通用软件测试概述",
+          "size": 30,
+          "value": 30
+        },
+        {
+          "name": "web自动化测试",
+          "size": 30,
+          "value": 30
+        },
+        {
+          "name": "移动APP自动化测试",
+          "size": 30,
+          "value": 30
+        },
+        {
+          "name": "接口测试工具和接口自动化测试",
+          "size": 30,
+          "value": 30
+        },
+        {
+          "name": "性能测试",
+          "size": 30,
+          "value": 30
+        }
+      ],
+      "value": 200
+    },
+    {
+      "name": "安卓开发",
+      "size": 200,
+      "children": [
+        {
+          "name": "入门",
+          "size": 60,
+          "value": 60
+        },
+        {
+          "name": "进阶",
+          "size": 70,
+          "value": 70
+        },
+        {
+          "name": "高级",
+          "size": 70,
+          "value": 70
+        }
+      ],
+      "value": 200
     }
   ],
-  "value": 3835461
+  "value": 1000
 }
