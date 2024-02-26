@@ -111,43 +111,139 @@
             {
               name: '面向对象',
               children: [
-                { name: 'if语句' },{ name: 'while循环语句' },{ name: 'for循环' },{ name: '函数' },{ name: '列表' },{ name: '元组' },
-                { name: 'json' },{ name: 'pyecharts' }
+                { name: '成员变量、成员方法' },{ name: '对象、构造方法' },{ name: '魔术方法' },{ name: '封装' },{ name: '继承' },{ name: '类型注解' },
+                { name: '多态' },{ name: '面向对象应用实例' }
               ]
             },
             {
               name: '进阶',
               children: [
-                { name: 'if语句' },{ name: 'while循环语句' },{ name: 'for循环' },{ name: '函数' },{ name: '列表' },{ name: '元组' },
-                { name: 'json' },{ name: 'pyecharts' }
+                { name: '正则表达式	' },{ name: '文件目录' },{ name: '日期时间' },{ name: '调用外部程序' },{ name: '多线程和多进程' },{ name: '读写excel' },
+                { name: '装饰器' },{ name: '网络编程' },{ name: '哈希和加密' },{ name: '制作成可执行文件' },{ name: '隐藏py文件' },{ name: '虚拟解释器环境 venv' },
+                { name: '成员变量、成员方法' },{ name: '对象、构造方法' },{ name: '魔术方法' },{ name: '封装' },{ name: '继承' },{ name: '类型注解' },
+                { name: '图片处理' },{ name: 'SSH 远程操作' }
               ]
             },
             {
               name: 'web开发',
               children: [
-                { name: 'if语句' },{ name: 'while循环语句' },{ name: 'for循环' },{ name: '函数' },{ name: '列表' },{ name: '元组' },
-                { name: 'json' },{ name: 'pyecharts' }
+                { name: 'CubicWeb' },{ name: 'Django' },{ name: 'web2py' },{ name: 'Weppy' },{ name: 'Zope2' },{ name: 'Bottle' },
+                { name: 'CherryPy' },{ name: 'Falcon' },{ name: 'Flask' },{ name: 'Pyramid' },{ name: 'Tornado' },{ name: 'Web.py' },
+                { name: 'Wheezy.web' },{ name: 'pyecharts' }
               ]
             },
             {
-              name: '数据采集',
+              name: '数据采集/爬虫',
               children: [
-                { name: 'if语句' },{ name: 'while循环语句' },{ name: 'for循环' },{ name: '函数' },{ name: '列表' },{ name: '元组' },
-                { name: 'json' },{ name: 'pyecharts' }
+                { name: '简介',
+                  children: [
+                    { name: '爬虫的定义' },{ name: '爬虫的作用' },{ name: '网页介绍' },{ name: 'Robots协议' }
+                  ] 
+                },
+                { name: '轻量级爬虫',
+                  children: [
+                    { name: '获取数据',
+                      children: [
+                        { name: '请求库',
+                          children: [
+                            { name: 'urlib' },{ name: 'requests' },{ name: 'selenium' },{ name: 'aiohttp' }
+                          ] 
+                        },
+                        { name: '抓取工具',
+                          children: [
+                            { name: 'Chrome' },{ name: 'Firefox' },{ name: 'Fidder' },{ name: 'Appium' }
+                          ] 
+                        }
+                      ] 
+                    },
+                    { name: '解析数据(解析库)',
+                      children: [
+                        { name: 'css' },{ name: 'pyquery' },{ name: 'beautifulsoup' },{ name: 'xpath' },{ name: 're' }
+                      ] 
+                    },
+                    { name: '数据存储',
+                      children: [
+                        { name: '小规模数据',
+                          children: [
+                            { name: 'TXT文件' },{ name: 'JSON文件' },{ name: 'CSV文件' }
+                          ] 
+                        },
+                        { name: '大规模数据',
+                          children: [
+                            { name: 'mysql' },{ name: 'mongodb' },{ name: 'redis' }
+                          ] 
+                        }
+                      ] 
+                    }
+                  ]
+                },
+                { name: '工程化爬虫',
+                  children: [
+                    { name: 'Nutch' },{ name: 'Scrapy' },{ name: 'Pyspider' }
+                  ] 
+                },
+                { name: '反爬及应对措施',
+                  children: [
+                    { name: '反爬' },{ name: '应对措施' }
+                  ] 
+                },
+                { name: '分布式爬虫',
+                  children: [
+                    { name: '分布式系统' },{ name: '分布式爬虫系统' }
+                  ] 
+                }
               ]
             },
             {
               name: '自动化测试',
               children: [
-                { name: 'if语句' },{ name: 'while循环语句' },{ name: 'for循环' },{ name: '函数' },{ name: '列表' },{ name: '元组' },
-                { name: 'json' },{ name: 'pyecharts' }
+                { name: 'Selenium',
+                  children: [
+                    { name: '原理与安装' },{ name: '选择元素的基本方法' },{ name: '操控元素的基本方法' },{ name: 'css表达式' },{ name: 'frame切换/窗口切换' },{ name: '选择框' },
+                    { name: '实战技巧' },{ name: 'Xpath选择器' }
+                  ]
+                },
+                { name: '自动化测试框架',
+                  children: [
+                    { name: 'hytest 框架' },{ name: 'pytest 框架' }
+                  ]
+                },
+                { name: 'API接口自动化',
+                  children: [
+                    { name: 'HTTP协议' },{ name: '接口测试概述' },{ name: 'requests库和session' },{ name: '接口手工测试' },{ name: '接口自动化测试' }
+                  ]
+                },
+                { name: '手机APP自动化',
+                  children: [
+                    { name: 'Appium原理与安装' },{ name: '定位元素' },{ name: '界面操作 和 adb 命令' },{ name: '内嵌网页自动化' }
+                  ]
+                }
               ]
             },
             {
               name: '自动化运维',
               children: [
-                { name: 'if语句' },{ name: 'while循环语句' },{ name: 'for循环' },{ name: '函数' },{ name: '列表' },{ name: '元组' },
-                { name: 'json' },{ name: 'pyecharts' }
+                { name: '新手',
+                  children: [
+                    { name: 'CMDB的增删改查 + Python数据结构' },{ name: 'Python函数与对象，构建CMDB的函数' },{ name: 'CMDB操作 + Flask Web框架' },{ name: 'CMDB存储到MySQL数据库' },{ name: 'Linux部署应用' }
+                  ]
+                },
+                { name: '初级',
+                  children: [
+                    { name: 'paramiko和netmiko' },{ name: 'Python正则解析' },{ name: 'Python snmp' },{ name: 'NetConf' },{ name: 'Crontab并回调CMDB' },{ name: 'SSH + NetConf + Flask Web框架' }
+                  ] 
+                },
+                { name: '中级',
+                  children: [
+                    { name: 'Celery任务队列' },{ name: 'Rsyslog日志采集' },{ name: 'MySQL性能优化' },{ name: '前后端分离' },{ name: 'Vue前端' }
+                  ] 
+                },
+                { name: '高级',
+                  children: [
+                    { name: 'Celery分时任务队列' },{ name: 'Flink处理' },{ name: 'Rsyslog - Kafka - Consumer - MySQL' },{ name: 'ELK，Rsyslog - Kafkf - LogStash - ElasticSearch - Kibana' },
+                    { name: '告警通知，屏蔽，抑制' },{ name: '任务编排' },{ name: '基于意图的分组配置下发' }
+                  ] 
+                }
               ]
             }
           ]
