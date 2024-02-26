@@ -96,7 +96,7 @@
             "category": 11
         },{
             "id": "12",
-            "name": "ECS",
+            "name": "Azure",
             "symbolSize": 20,
             "x": -190,
             "y": 150,
@@ -120,21 +120,64 @@
         },
         {
             "id": "15",
-            "name": "Bigdata",
+            "name": "BigData",
             "symbolSize": 30,
             "x": -220,
             "y": 190,
             "category": 15
+        },
+        {
+            "id": "16",
+            "name": "HTML",
+            "symbolSize": 10,
+            "x": -315,
+            "y": 180,
+            "category": 0
+        },
+        {
+            "id": "17",
+            "name": "CSS",
+            "symbolSize": 10,
+            "x": -310,
+            "y": 195,
+            "category": 0
+        },{
+            "id": "18",
+            "name": "Sass",
+            "symbolSize": 5,
+            "x": -315,
+            "y": 205,
+            "category": 0
+        },
+        {
+            "id": "19",
+            "name": "Less",
+            "symbolSize": 5,
+            "x": -302,
+            "y": 206,
+            "category": 0
+        },
+        {
+            "id": "20",
+            "name": "Vue.js",
+            "symbolSize": 12,
+            "x": -290,
+            "y": 195,
+            "category": 0
         }
     ],
     "links": [
         {
-            "source": "1",
-            "target": "88"
+            "source": "0",
+            "target": "20"
         },
         {
-            "source": "2",
-            "target": "99"
+            "source": "17",
+            "target": "18"
+        },
+        {
+            "source": "17",
+            "target": "19"
         }
     ],
     "categories": [
