@@ -251,14 +251,91 @@
         {
           name: '大数据',
           children: [
-            { name: 'DirtySprite', value: 8833 },
-            { name: 'LineSprite', value: 1732 },
-            { name: 'RectSprite', value: 3623 }
+            { name: '前提(非强制)',
+              children: [
+                { name: 'Linux' },{ name: 'SQL' },{ name: 'Java' },{ name: 'Scala' },
+                { name: 'SQL Server' },{ name: 'Oracle' },{ name: 'PostgreSQL' }
+              ] 
+            },
+            { name: '数据采集',
+              children: [
+                { name: '爬虫' },{ name: 'Hadoop' },{ name: 'Hive' },{ name: 'Hbase' },{ name: 'ETL' }
+              ]  
+            },
+            { name: '数据管理',
+              children: [
+              { name: '数据仓库体系' },{ name: '数据治理体系' },{ name: '数据OLAP查询' }
+              ] 
+            },
+            { name: '数据计算',
+              children: [
+                { name: 'Spark' },{ name: 'Flink' }
+              ] 
+            },
+            { name: '数据分析',
+              children: [
+                { name: 'Excel' },{ name: 'Numpy' },{ name: 'Pandas' },{ name: 'Matplotlib' },{ name: 'seaborn' }
+              ] 
+            },
+            { name: '大数据工具',
+              children: [
+                { name: 'Zookeeper' },{ name: 'Kafka' },{ name: 'Azkaban' },{ name: 'CDH' }
+              ]  
+            },
+            { name: '数据可视化',
+              children: [
+                { name: 'PowerBI' },{ name: 'Superset' },{ name: 'Tableau' },{ name: 'FineBI' }
+              ]  
+            },
+            { name: '其他',
+              children: [
+                { name: 'MPP数据库',
+                  children: [
+                    { name: 'Teradata' },{ name: 'Netezza' },{ name: 'Vertica' },{ name: 'GaussDB' },{ name: 'Greenplum' }
+                  ]  
+                }
+              ] 
+            }
           ]
         },
         {
           name: '人工智能',
-          children: [{ name: 'FlareVis', value: 4116 }]
+          children: [
+            { name: '入门',
+              children: [
+                { name: 'python编程' },{ name: 'Numpy矩阵运算' },{ name: 'Scipy数值运算库' },{ name: 'Pandas数据科学库' },
+                { name: 'Matplotlib' },{ name: 'Seaborn' },{ name: 'PyEcharts' }
+              ] 
+            },
+            { name: '机器学习',
+              children: [
+                { name: 'Scikit Learn' },{ name: '分类算法' },{ name: '回归算法' },{ name: '聚类算法' },
+                { name: '属性降维' },{ name: '模型选择' },{ name: '特征工程' }
+              ]  
+            },
+            { name: '深度学习',
+              children: [
+                { name: '人工神经网络' },{ name: 'BP神经网络' },{ name: 'CNN卷积神经网络' },{ name: 'RNN循环神经网络' }
+              ] 
+            },
+            { name: '强化学习',
+              children: [
+                { name: 'Q-Learning' },
+                { name: '深度强化学习' },
+              ] 
+            },
+            { name: 'NLP自然语言处理',
+              children: [
+                { name: 'Pytorch编程' },{ name: '传统序列模型' },{ name: 'Transfomer原理' },{ name: '文本预处理' },
+                { name: 'RNN及变体' },{ name: '迁移学习' }
+              ] 
+            },
+            { name: 'CV计算机视觉',
+              children: [
+                { name: 'OpenCV图像处理' },{ name: 'Tensorflow编程' },{ name: '目标分类' },{ name: '目标检测' },{ name: '目标分割' }
+              ] 
+            }
+          ]
         }
       ]
     };
