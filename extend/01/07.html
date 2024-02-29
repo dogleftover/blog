@@ -10,7 +10,6 @@
 <body style="height: 100%; margin: 0">
   <div id="container" style="height: 100%"></div>
 
-  
   <script type="text/javascript" src="../js/echarts.min.js"></script>
   <!-- Uncomment this line if you want to dataTool extension
   <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.4.3/files/dist/extension/dataTool.min.js"></script>
@@ -46,6 +45,15 @@
       ['2024-02-08', 4],
       ['2024-02-09', 2],
       ['2024-02-13', 4],
+      ['2024-02-15', 1],
+      ['2024-02-18', 2],
+      ['2024-02-19', 8],
+      ['2024-02-20', 3],
+      ['2024-02-21', 14],
+      ['2024-02-22', 2],
+      ['2024-02-23', 1],
+      ['2024-02-27', 1],
+      ['2024-02-28', 4],
     ];
 const links = graphData.map(function (item, idx) {
   return {
@@ -59,7 +67,7 @@ function getVirtualData(year) {
   const end = +echarts.time.parse(+year + 1 + '-01-01');
   const dayTime = 3600 * 24 * 1000;
   const data = [];
-  const data1 = [0,0,0,0,3,0,4,4,2,0,0,0,4];
+  const data1 = [0,0,0,0,3,0,4,4,2,0,0,0,4,0,1,0,0,2,8,3,14,2,1,0,0,0,1,4];
   for (let time = date; time < end; time += dayTime) {
     // 取第一个数
     let num = data1[0];
@@ -100,7 +108,7 @@ option = {
   },
   visualMap: {
     min: 1,   // 最小值
-    max: 10,    // 最大值
+    max: 15,    // 最大值
     type: 'piecewise',
     splitNumber: 4,   // 区间
     left: 'left',   // 位置
