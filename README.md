@@ -4,7 +4,7 @@
 |   01   |   02  |   03  |   04  |   05  |
 |  :---:  |  :---:  |  :---:  |  :---:  |  :---:  |
 |    [算法与设计](https://dogleftover.github.io/blog-beautify/category/architecture_design.html)    |    [后端](https://dogleftover.github.io/blog-beautify/category/back_end.html)    |    [数据库](https://dogleftover.github.io/blog-beautify/category/database.html)    |    [前端](https://dogleftover.github.io/blog-beautify/category/headend.html)    |    [中间件](https://dogleftover.github.io/blog-beautify/category/middleware.html)    |
-|    [非关系型](https://dogleftover.github.io/blog-beautify/category/nosql.html)    |    [面向对象](https://dogleftover.github.io/blog-beautify/category/object_oriented.html)    |    [服务器](https://dogleftover.github.io/blog-beautify/category/server.html)    |        |        |
+|    [非关系型](https://dogleftover.github.io/blog-beautify/category/nosql.html)    |    [面向对象](https://dogleftover.github.io/blog-beautify/category/object_oriented.html)    |    [服务器](https://dogleftover.github.io/blog-beautify/category/server.html)    |    [人工智能](https://dogleftover.github.io/blog-beautify/category/artificial_intelligence.html)    |        |
 
 ### 标签
 |   01   |   02  |   03  |   04  |   05  |
