@@ -414,6 +414,26 @@
         {
             "source": "1",
             "target": "6"
+        },
+        {
+            "source": "2",
+            "target": "7"
+        },
+        {
+            "source": "13",
+            "target": "14"
+        },
+        {
+            "source": "13",
+            "target": "15"
+        },
+        {
+            "source": "9",
+            "target": "10"
+        },
+        {
+            "source": "9",
+            "target": "11"
         }
     ],
     "categories": [
