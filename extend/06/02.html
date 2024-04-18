@@ -1,0 +1,33 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>生成随机密码</title>  
+</head>  
+<body>  
+    <p id="randomPassword">页面加载时将显示随机密码</p>  
+  
+    <script>  
+        // 生成随机密码的函数  
+        function generateRandomPassword(length) {  
+            var result = '';  
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';  
+            var charactersLength = characters.length;  
+            for (var i = 0; i < length; i++) {  
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));  
+            }  
+            return result;  
+        }  
+  
+        // 获取要显示随机密码的元素  
+        const randomPasswordElement = document.getElementById('randomPassword');  
+  
+        // 在页面加载时生成随机密码并显示  
+        window.onload = function() {  
+            const randomPassword = generateRandomPassword(10); // 生成一个长度为10的随机密码  
+            randomPasswordElement.textContent = `生成的随机密码是: ${randomPassword}`;  
+        }  
+    </script>  
+</body>  
+</html>

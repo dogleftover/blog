@@ -1,0 +1,27 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>生成随机数</title>  
+</head>  
+<body>  
+    <p id="randomNumber">页面加载时将显示随机数</p>  
+  
+    <script>  
+        // 生成一个1到100之间的随机数  
+        function generateRandomNumber() {  
+            return Math.floor(Math.random() * 100) + 1;  
+        }  
+  
+        // 获取要显示随机数的元素  
+        const randomNumberElement = document.getElementById('randomNumber');  
+  
+        // 在页面加载时生成随机数并显示  
+        window.onload = function() {  
+            const randomNumber = generateRandomNumber();  
+            randomNumberElement.textContent = `生成的随机数是: ${randomNumber}`;  
+        }  
+    </script>  
+</body>  
+</html>
