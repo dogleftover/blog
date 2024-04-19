@@ -4,10 +4,26 @@
     <meta charset="UTF-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>生成随机数</title>  
+    <style>  
+        body {  
+          display: flex;  
+          justify-content: center;  
+          align-items: center;  
+          height: 100vh;  
+          margin: 0;  
+        }  
+        .center-div {  
+          width: 200px;  
+          height: 200px;  
+          background-color: white;  
+        }  
+      </style>  
 </head>  
 <body>  
-    <p id="randomNumber">页面加载时将显示随机数</p>  
-    <div><button type="button"><a href="./02.html">点击跳转</a></button></div>
+    <div class="center-div">
+        <p id="randomNumber">页面加载时将显示随机数</p>  
+        <button type="button"><a href="./02.html">点击跳转</a></button>
+    </div>
   
     <script>  
         // 生成一个1到100之间的随机数  
