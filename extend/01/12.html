@@ -1,0 +1,160 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=calendar-graph
+-->
+<!DOCTYPE html>
+<html lang="en" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+  <title>2024-04贡献度</title>
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  <script type="text/javascript" src="../js/echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.4.3/files/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-gl/2/files/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts-stat/latest/files/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/china.js"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/4.9.0/files/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://registry.npmmirror.com/echarts/5.4.3/files/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, null, {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+    var app = {};
+    
+    var option;
+
+    const graphData = [  // 数据
+      ['2024-04-02', 2],
+      ['2024-04-06', 1],
+      ['2024-04-07', 2],
+      ['2024-04-12', 2],
+      ['2024-04-14', 1],
+      ['2024-04-15', 1],
+      ['2024-04-19', 1],
+      ['2024-04-22', 14],
+      ['2024-04-23', 13],
+      ['2024-04-24', 14],
+      ['2024-04-26', 15],
+      ['2024-04-28', 3],
+      ['2024-04-29', 1],
+      ['2024-04-30', 2],
+    ];
+const links = graphData.map(function (item, idx) {
+  return {
+    source: idx,
+    target: idx + 1
+  };
+});
+links.pop();
+function getVirtualData(year) {
+  const date = +echarts.time.parse(year + '-04-01');
+  const end = +echarts.time.parse(+year + 1 + '-01-01');
+  const dayTime = 3600 * 24 * 1000;
+  const data = [];
+  const data1 = [0,2,0,0,0,1,2,0,0,0,0,2,0,1,1,0,0,0,1,0,0,14,13,14,0,15,0,3,1,2];
+  for (let time = date; time < end; time += dayTime) {
+    // 取第一个数
+    let num = data1[0];
+    console.log(num)
+    // 删除第一个数
+    data1.shift();
+    console.log(data1);
+    // 填充
+    data.push([
+      echarts.time.format(time, '{yyyy}-{MM}-{dd}', false),
+      num
+    ]);
+  }
+  return data;
+}
+option = {
+  tooltip: {},
+  calendar: {
+    top: '6%',    // 位置
+    left: '5%',    // 位置
+    orient: 'vertical',
+    cellSize: 40,
+    yearLabel: {
+      margin: 50,
+      fontSize: 30
+    },
+    dayLabel: {
+      firstDay: 1,
+      nameMap: 'cn'
+    },
+    monthLabel: {
+      nameMap: 'cn',
+      margin: 15,
+      fontSize: 20,
+      color: '#999'
+    },
+    range: ['2024-04']  // 月份
+  },
+  visualMap: {
+    min: 1,   // 最小值
+    max: 15,    // 最大值
+    type: 'piecewise',
+    splitNumber: 4,   // 区间
+    left: 'left',   // 位置
+    top: 260,   // 位置
+    inRange: {    // 渐变
+      color: ['#C7DBFF','#5291FF']
+    },
+    seriesIndex: [1],
+    orient: 'horizontal'
+  },
+  series: [
+    {
+      type: 'graph',
+      edgeSymbol: ['none', 'arrow'],
+      coordinateSystem: 'calendar',
+      links: links,
+      symbolSize: 15,
+      calendarIndex: 0,
+      itemStyle: {
+        color: 'yellow',
+        shadowBlur: 9,
+        shadowOffsetX: 1.5,
+        shadowOffsetY: 3,
+        shadowColor: '#555'
+      },
+      lineStyle: {
+        color: '#D10E00',
+        width: 1,
+        opacity: 1
+      },
+      data: graphData,
+      z: 20
+    },
+    {
+      type: 'heatmap',
+      coordinateSystem: 'calendar',
+      data: getVirtualData('2024')    // 年份
+    }
+  ]
+};
+
+    if (option && typeof option === 'object') {
+      myChart.setOption(option);
+    }
+
+    window.addEventListener('resize', myChart.resize);
+  </script>
+</body>
+</html>
