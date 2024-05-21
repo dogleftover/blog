@@ -47,6 +47,7 @@
 ```
 bootstrap.min.css -> v3.3.7
 bootstrap-4.4.1.min.css -> v4.4.1
+vis.min.css
 ```
 
 - js
@@ -59,4 +60,5 @@ bootstrap-4.4.1.min.js -> v4.4.1
 jquery-3.3.1.slim.min.js -> v3.3.1
 popper.min.js
 jquery-3.7.1.min.js -> v3.7.1
+vis.min.js
 ```
