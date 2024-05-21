@@ -1,0 +1,47 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>2024-05贡献度</title>  
+    <script src="../js/vis.min.js"></script>  
+    <link rel="stylesheet" type="text/css" href="../css/vis.min.css">  
+</head>  
+<body>  
+  
+<div id="visualization" style="width: 600px;"></div>  
+  
+<script>  
+    // 准备数据  
+    var items = [  
+        {x: '2024-05-06', y: 2},  
+        {x: '2024-05-07', y: 1},  
+        {x: '2024-05-08', y: 3}, 
+        {x: '2024-05-13', y: 2},  
+        {x: '2024-05-14', y: 6},  
+        {x: '2024-05-15', y: 2}, 
+        {x: '2024-05-17', y: 1},  
+        {x: '2024-05-20', y: 1},  
+        {x: '2024-05-21', y: 1}, 
+    ];  
+  
+    var dataset = new vis.DataSet(items);  
+  
+    // 创建折线图  
+    var options = {  
+        start: '2024-05-01',  
+        end: '2024-05-25',  
+        drawPoints: {  
+            style: 'circle'  
+        },  
+        dataAxis: {  
+            showGrid: true,  
+            showMinorLabels: true  
+        }  
+    };  
+  
+    var graph2d = new vis.Graph2d(document.getElementById('visualization'), dataset, null, options);  
+</script>
+  
+</body>  
+</html>
