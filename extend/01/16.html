@@ -1,0 +1,80 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>博客园每月贡献度折线图</title>  
+    <script src="../js/chart.js"></script>  
+</head>  
+<body>  
+     <!-- 创建用于承载图表的HTML元素 -->  
+    <div id="chartContainer" style="width: 800px; height: 350px;">  
+        <canvas></canvas>
+    </div>
+    <script>  
+        // 假设您有一些数据  
+const labels = ['21-01', '21-02', '21-03', '21-04', '21-05', '21-06', '21-07', '21-08', '21-09', '21-10', '21-11', '21-12', 
+                '22-01', '22-02', '22-03', '22-04', '22-05', '22-06','22-07', '22-08', '22-09', '22-10', '22-11', '22-12',
+                '23-01', '23-02', '23-03', '23-04', '23-05', '23-06','23-07', '23-08', '23-09', '23-10', '23-11', '23-12',
+                '24-01', '24-02', '24-03', '24-04', '24-05', '24-06','24-07', '24-08', '24-09', '24-10', '24-11', '24-12'];  
+const data = [12, 19, 3, 25, 82, 3, 12, 19, 3, 65, 62, 3,
+              12, 19, 73, 5, 2, 93, 12, 19, 3, 65, 62, 3,
+              12, 19, 3, 25, 82, 3, 12, 19, 3, 65, 62, 3,
+              12, 19, 3, 25, 82, 3, 12, 19, 3, 65, 62, 3];  
+  
+// 创建Chart.js实例  
+const canvas = document.querySelector('#chartContainer canvas');  
+const ctx = canvas.getContext('2d');  
+const chart = new Chart(ctx, {  
+    type: 'line',  
+    data: {  
+        labels: labels,  
+        datasets: [{  
+            label: '博客园每月数据',  
+            data: data,  
+            fill: false,  
+            borderColor: 'rgb(75, 192, 192)',  
+            tension: 0.1  
+        }]  
+    },  
+    options: {  
+        scales: {  
+            x: {  
+                beginAtZero: true,  
+                // 设置x轴的最大显示标签数，以控制滚动范围  
+                maxTicksLimit: 10,  
+                // 禁用x轴的网格线，以便更好地看到滚动效果  
+                grid: {  
+                    display: false  
+                }  
+            }  
+        }  
+    }  
+});  
+  
+// 初始化滚动偏移量  
+let offset = 0;  
+  
+// 设置定时滚动函数  
+function scrollChart() {  
+    // 每次调用时增加偏移量，实现向左滚动效果  
+    offset++;  
+    if (offset > labels.length - chart.options.scales.x.maxTicksLimit) {  
+        // 刷新页面  
+        location.reload();  
+        // 当滚动到图表末尾时，重置偏移量以循环显示数据  
+        offset = 0;  
+    }  
+    // 更新图表的x轴最小和最大值来实现滚动效果  
+    chart.options.scales.x.min = offset;  
+    chart.options.scales.x.max = offset + chart.options.scales.x.maxTicksLimit;  
+    // 更新图表以显示更改  
+    chart.update();  
+}  
+  
+// 设置定时器，每1000毫秒（1秒）调用一次scrollChart函数  
+setInterval(scrollChart, 1000);
+    </script>  
+    
+</body>  
+</html>
