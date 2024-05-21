@@ -1,0 +1,89 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>2024年每月贡献图折线图</title>  
+    <script src="../js/chart.js"></script>  
+</head>  
+<body>  
+    <!-- 创建用于承载图表的HTML元素 -->  
+	<div style="height:150%;width:150%;">
+        <canvas id="myChart" ></canvas>
+    </div>     
+
+    <script>  
+        // 初始化折线图  
+        var ctx = document.getElementById('myChart').getContext('2d');  
+        var chart = new Chart(ctx, {  
+            type: 'line', // 图表类型  
+            data: {  
+                labels: [], // x轴标签  
+                datasets: [{  
+                    label: '数据',  
+                    data: [], // y轴数据  
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',  
+                    borderColor: 'rgba(75, 192, 192, 1)',  
+                    borderWidth: 1  
+                }]  
+            },  
+            options: {  
+                scales: {  
+                    y: {  
+                        beginAtZero: true  
+                    }  
+                }  
+            }  
+        });  
+ 
+        var arr = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  
+        // 添加新数据点的函数  
+        function addData(value) {  
+            // 获取当前时间作为x轴标签  
+            // var label = new Date().toLocaleTimeString();  
+            // 更新数据集和标签  
+            // chart.data.labels.push(label);  
+            chart.data.labels.push(arr.shift());  
+            chart.data.datasets[0].data.push(value);  
+  
+            // 更新图表  
+            chart.update();  
+        }  
+  
+        // 初始添加一些数据点  
+        addData(56);  
+        addData(57);  
+ 
+        var data = [51, 72, 19];  
+  
+        // 每秒添加一个新数据点来模拟动态数据  
+        // setInterval(function() {  
+        //     addData(Math.random() * 100); 
+        // }, 1000);  
+ 
+        var counter = 0; // 初始化计数器  
+        var maxCount = 12; // 设置最大执行次数  
+        
+        // 定时执行的函数  
+        function timedAction() {  
+            console.log('定时器执行了 ' + (counter + 1) + ' 次');  
+            counter++; // 计数器递增  
+            addData(data.shift()); 
+        
+            // 检查是否达到最大执行次数  
+            if (counter < maxCount) {  
+                // 如果没达到，则设置下一次定时器  
+                setTimeout(timedAction, 1000); // 每秒执行一次  
+            } else {  
+                console.log('定时器已执行完12次');  
+                // 刷新页面  
+                location.reload(); 
+            }  
+        }  
+        
+        // 启动定时器  
+        timedAction();
+    </script>  
+</body>  
+</html>
