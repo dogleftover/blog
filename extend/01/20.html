@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>2024-04贡献度</title>
+  <script nonce="undefined" src="../js/zingchart.min.js"></script>
+  <style>
+    .chart--container {
+      /* min-height: 530px; */
+      width: 650px;
+      height: 320px;
+    }
+
+    .zc-ref {
+      display: none;
+    }
+    .centered-container {
+      display: flex;
+      justify-content: center; /* 水平居中 */
+      align-items: center; /* 垂直居中 */
+      /* 设置高度和宽度，根据需要自定义 */
+      height: 10px; /* 例如，占满全屏高度 */
+      width: 650px; /* 或者具体宽度 */
+      position: relative;
+      top: -5px; 
+    }
+  </style>
+</head>
+
+<body>
+  <div class="centered-container">2024-04贡献度</div>
+  <div id="myChart" class="chart--container">
+    <!-- <a class="zc-ref" href="#">贡献度</a> -->
+  </div>
+
+  <script>
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"];
+    let chartConfig = {
+      type: 'area',
+      title: {
+        text: '2024-04贡献度',
+        fontColor: '#4caee7',
+      },
+      subtitle: {
+        text: '2024-04贡献度',
+        fontColor: '#cb8670',
+      },
+      plot: {
+        activeArea: true,
+        animation: {
+          delay: 50,
+          effect: 'ANIMATION_SLIDE_LEFT',
+          method: 'ANIMATION_REGULAR_EASE_OUT',
+          sequence: 'ANIMATION_NO_SEQUENCE',
+          speed: 1500,
+        },
+        hoverMarker: {
+          size: '8px',
+        },
+        stacked: true,
+      },
+      plotarea: {
+        backgroundColor: '#fff',
+      },
+      scaleX: {                       // x轴 日期
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', 
+        '16', '17', '18', '19', '20', '21', '22', '23', '24', '25', '26', '27', '28', '29', '30']     
+        // lineColor: '#333',
+        // maxItems: 6,
+        // minValue: 1274313600000,
+        // step: 600000,
+        // tick: {
+        //   lineColor: '#333',
+        // },
+        // transform: {
+        //   type: 'date',
+        //   all: '%D, %d %M<br>%h:%i %A',
+        //   item: {
+        //     visible: false,
+        //   },
+        // },
+      },
+      scaleY: {
+        item: {
+          padding: '4px',
+        },
+        lineColor: '#333',
+        tick: {
+          lineColor: '#333',
+        },
+      },
+      series: [{          // y轴 0,2,0,0,0,1,2,0,0,0,0,2,0,1,1,0,0,0,1,0,0,14,13,14,0,15,0,3,1,2
+          values: [0,2,0,0,0,1,2,0,0,0,0,2,0,1,1,0,0,0,1,0,0,14,13,14,0,15,0,3,1,2],
+          backgroundColor: '#cb8670',
+          lineColor: '#cb8670',
+          marker: {
+            backgroundColor: '#cb8670',
+            borderColor: '#fff',
+            borderWidth: '2px',
+          },
+        },
+        // {
+        //   values: [21, 29, 14, 16, 28, 35, 21, 18, 11, 7, 4, 9, 25, 15, 33, 13],
+        //   backgroundColor: '#4caee7',
+        //   lineColor: '#4caee7',
+        //   marker: {
+        //     backgroundColor: '#4caee7',
+        //     borderColor: '#fff',
+        //     borderWidth: '2px',
+        //   },
+        // },
+      ],
+    };
+
+    zingchart.render({
+      id: 'myChart',
+      data: chartConfig,
+      height: '100%',
+      width: '100%',
+    });
+  </script>
+</body>
+
+</html>
