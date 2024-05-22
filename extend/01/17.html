@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <title>时间轴</title>
+  <script type="text/javascript" src="../js/vis-timeline-graph2d.min.js"></script>
+  <link href="../css/vis-timeline-graph2d.min.css" rel="stylesheet" type="text/css" />
+  <style type="text/css">
+    #visualization {
+      width: 600px;
+      height: 200px;
+      border: 1px solid lightgray;
+    }
+  </style>
+</head>
+<body>
+<div id="visualization"></div>
+<script type="text/javascript">
+  // DOM element where the Timeline will be attached
+  var container = document.getElementById('visualization');
+ 
+  // Create a DataSet (allows two way data-binding)
+  var items = new vis.DataSet([
+    {id: 1, content: '数仓', start: '2024-01-01', end: '2024-01-20'},
+    {id: 2, content: 'Echarts', start: '2024-02-05', end: '2024-02-19'},
+    {id: 3, content: 'OpenCV', start: '2024-02-20', end: '2024-03-04'},
+    {id: 4, content: 'Flask', start: '2024-03-19', end: '2024-03-20', type: 'point'},
+    {id: 5, content: 'Excel', start: '2024-03-21'},
+    {id: 6, content: 'vis.js', start: '2024-04-22', end: '2024-04-24'},
+    {id: 7, content: 'Chartist.js', start: '2024-04-26'},
+    {id: 8, content: 'amCharts', start: '2024-04-26'},
+    {id: 9, content: 'Linux', start: '2024-04-28', end: '2024-05-15'},
+  ]);
+ 
+  // Configuration for the Timeline
+  var options = {};
+ 
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, options);
+</script>
+</body>
+</html>
