@@ -21,7 +21,7 @@
 |   [矩形树图和旭日图的动画过渡](https://dogleftover.github.io/blog-beautify/extend/05/treemap-sunburst-transition_1.html)   |   [分类变化情况-排序](https://dogleftover.github.io/blog-beautify/extend/01/bar-race)  |  [分类变化情况-饼图](https://dogleftover.github.io/blog-beautify/extend/01/pie-simple)   |  [轮播图3](https://dogleftover.github.io/blog-beautify/extend/01/bulletin_board_3.html)   |  [2024-01贡献度](https://dogleftover.github.io/blog-beautify/extend/01/08.html)   |
 |   [分页按钮](https://dogleftover.github.io/blog-beautify/extend/01/09.html)   |  [2021-2024不同分类贡献度](https://dogleftover.github.io/blog-beautify/extend/01/10.html)   |   [思维导图2](https://dogleftover.github.io/blog-beautify/extend/02/mind_mapping_2.html)  |  [思维导图3](https://dogleftover.github.io/blog-beautify/extend/02/mind_mapping_3.html)   |  [2024-03热力图](https://dogleftover.github.io/blog-beautify/extend/01/11.html)   |
 |   [生成随机数](https://dogleftover.github.io/blog-beautify/extend/06/01.html)   |  [生成随机密码](https://dogleftover.github.io/blog-beautify/extend/06/02.html)   |  [2024-04热力图](https://dogleftover.github.io/blog-beautify/extend/01/12.html)   |  [2024-05贡献度](https://dogleftover.github.io/blog-beautify/extend/01/13.html)   |   [轮播图4](https://dogleftover.github.io/blog-beautify/extend/01/bulletin_board_4.html)  |
-|   [2024-05热力图](https://dogleftover.github.io/blog-beautify/extend/01/14.html)   |   [2024年每月贡献图折线图](https://dogleftover.github.io/blog-beautify/extend/01/15.html)  |  [博客园每月贡献度折线图](https://dogleftover.github.io/blog-beautify/extend/01/16.html)   |  [时间轴](https://dogleftover.github.io/blog-beautify/extend/01/17.html)   |     |
+|   [2024-05热力图](https://dogleftover.github.io/blog-beautify/extend/01/14.html)   |   [2024年每月贡献图折线图](https://dogleftover.github.io/blog-beautify/extend/01/15.html)  |  [博客园每月贡献度折线图](https://dogleftover.github.io/blog-beautify/extend/01/16.html)   |  [时间轴](https://dogleftover.github.io/blog-beautify/extend/01/17.html)   |   [2024-02贡献度](https://dogleftover.github.io/blog-beautify/extend/01/18.html)  |
 
 ### 图标
 |   01   |   02  |   03  |   04  |   05  |
@@ -50,6 +50,7 @@ bootstrap.min.css -> v3.3.7
 bootstrap-4.4.1.min.css -> v4.4.1
 vis.min.css
 vis-timeline-graph2d.min.css
+chartist.min.css
 ```
 
 - js
@@ -64,4 +65,5 @@ popper.min.js
 jquery-3.7.1.min.js -> v3.7.1
 vis.min.js
 vis-timeline-graph2d.min.js
+chartist.min.js
 ```
